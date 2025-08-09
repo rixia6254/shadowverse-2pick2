@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, user-scalable=no"
+  />
+  <title>2Pick Mimic (Shadowverse: Worlds Beyond inspired)</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .card-shadow{box-shadow:0 6px 20px rgba(0,0,0,.08)}
+    .ring-sel{box-shadow:0 0 0 2px #a78bfa inset}
+    .tile:hover{transform:translateY(-2px)}
+    .transition-base{transition:all .18s ease}
+    .line-clamp-2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900">
+  <div class="max-w-6xl mx-auto px-4 py-6">
+    <!-- Header -->
+    <header class="flex items-center justify-between gap-3">
+      <div>
+        <h1 class="text-2xl font-bold">2Pick Mimic（Prototype, Vanilla HTML）</h1>
+        <p class="text-sm text-slate-500">Shadowverse: Worlds Beyond の2Pick体験のうち、<span class="font-semibold">クラス選択プレビュー</span>と<span class="font-semibold">2枚ピック×30</span>のみを再現</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <button id="btnReset" class="hidden px-3 py-2 text-sm rounded-xl border bg-white hover:bg-slate-50 transition-base">リセット</button>
+      </div>
+    </header>
+
+    <!-- ============ PHASE: CLASS ============ -->
+    <section id="phase-class" class="mt-6 grid md:grid-cols-3 gap-4">
+      <div class="md:col-span-1">
+        <div class="p-4 rounded-2xl border bg-white card-shadow sticky top-4">
+          <h2 class="font-semibold mb-3">1) クラス選択</h2>
+          <p class="text-sm text-slate-600 mb-3">
+            各クラスをタブで切替 → <span class="font-semibold">レジェンド1枚以上を含む2枚</span>のプレビューを確認し、
+            「このクラスで始める」を押してください。
+          </p>
+          <div class="space-y-2">
+            <input id="seedInput" class="w-full px-3 py-2 rounded-lg border" placeholder="(任意) シード…" />
+            <p class="text-xs text-slate-500">※ デモではシード値は表示のみで、乱数には未接続。</p>
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-2 space-y-4">
+        <div id="classTabs" class="grid grid-cols-3 md:grid-cols-7 gap-2"></div>
+        <div id="classPreview" class="space-y-4"></div>
+      </div>
+    </section>
+
+    <!-- ============ PHASE: PICKING ============ -->
+    <section id="phase-picking" class="hidden mt-6 grid md:grid-cols-3 gap-4">
+      <div class="md:col-span-2 space-y-4">
+        <div class="p-4 rounded-2xl border bg-white card-shadow">
+          <div class="flex items-center justify-between mb-3">
+            <div>
+              <h2 class="font-semibold">2) 2枚から1枚をPick</h2>
+              <p class="text-sm text-slate-600">クラス: <span id="pickedClass" class="font-semibold"></span></p>
+            </div>
+            <div class="w-44">
+              <div class="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
+                <div id="progressBar" class="h-full bg-indigo-400" style="width:0%"></div>
+              </div>
+              <div id="progressText" class="text-xs text-right mt-1 text-slate-500">0 / 30</div>
+            </div>
+          </div>
+
+          <div id="pickPair" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+
+          <p id="remainingText" class="mt-4 text-xs text-slate-500">残り 30 枚選択</p>
+        </div>
+      </div>
+
+      <div class="md:col-span-1 space-y-4">
+        <div class="p-4 rounded-2xl border bg-white card-shadow">
+          <div class="flex items-center justify-between">
+            <h3 class="text-sm font-bold">Picked Deck (<span id="deckCount">0</span>/30)</h3>
+            <div class="flex items-center gap-2">
+              <button id="btnCopy" class="px-2 py-1 text-sm rounded-lg border bg-white hover:bg-slate-50 transition-base">Copy</button>
+              <button id="btnSave" class="px-2 py-1 text-sm rounded-lg border bg-white hover:bg-slate-50 transition-base">Save .txt</button>
+            </div>
+          </div>
+          <div class="rounded-xl border bg-white max-h-72 overflow-auto mt-2">
+            <ul id="deckList" class="text-sm divide-y"></ul>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl border bg-white card-shadow">
+          <h3 class="text-sm font-bold mb-2">ルール（本サイトの仕様）</h3>
+          <ul class="text-sm list-disc pl-5 space-y-1 text-slate-600">
+            <li>2枚の提示から1枚を選び、30枚になるまで繰り返し</li>
+            <li>プレビューは各クラスでレジェンドを必ず含む2枚</li>
+            <li>デモではカード出現は完全ランダム（重複あり）</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PHASE: DONE ============ -->
+    <section id="phase-done" class="hidden mt-6 grid md:grid-cols-3 gap-4">
+      <div class="md:col-span-2 space-y-4">
+        <div class="p-6 rounded-2xl border bg-white card-shadow text-center space-y-3">
+          <h2 class="text-xl font-bold">デッキ完成！</h2>
+          <p class="text-slate-600">クラス: <span id="doneClass" class="font-semibold"></span> ／ 枚数: 30</p>
+          <div class="flex items-center justify-center gap-2">
+            <button id="btnAgain" class="px-3 py-2 rounded-xl border bg-white hover:bg-slate-50 transition-base">もう一度</button>
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-1">
+        <div class="p-4 rounded-2xl border bg-white card-shadow">
+          <div class="flex items-center justify-between">
+            <h3 class="text-sm font-bold">Picked Deck (30/30)</h3>
+            <div class="flex items-center gap-2">
+              <button id="btnCopy2" class="px-2 py-1 text-sm rounded-lg border bg-white hover:bg-slate-50 transition-base">Copy</button>
+              <button id="btnSave2" class="px-2 py-1 text-sm rounded-lg border bg-white hover:bg-slate-50 transition-base">Save .txt</button>
+            </div>
+          </div>
+          <div class="rounded-xl border bg-white max-h-72 overflow-auto mt-2">
+            <ul id="deckListDone" class="text-sm divide-y"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-10 text-center text-xs text-slate-500">
+      ※ 本プロトタイプはファンメイドのUIデモです。公式アセット・実カードデータは含みません。
+    </footer>
+  </div>
+
+  <script>
+    // -------------------- Data --------------------
+    const CLASSES = ["Elf","Royal","Witch","Dragon","Nightmare","Bishop","Nemesis"];
+
+    // Minimal mock pool (id, name, class, rarity[L/G/S/B], cost, type, text)
+    const MOCK_CARDS = [
+      // Elf
+      { id:"elf-l1", name:"森羅の覇精 エルピス", class:"Elf", rarity:"L", cost:7, type:"Follower", text:"+2/+2 if played after 2 cards." },
+      { id:"elf-l2", name:"翠風の導き手", class:"Elf", rarity:"L", cost:6, type:"Follower", text:"Draw 1 on evolve." },
+      { id:"elf-g1", name:"妖精の女王", class:"Elf", rarity:"G", cost:5, type:"Follower", text:"Summon 2 Fairies." },
+      { id:"elf-s1", name:"森の意志", class:"Elf", rarity:"S", cost:6, type:"Spell", text:"Deal 2 to all enemies." },
+      { id:"elf-b1", name:"フェアリー", class:"Elf", rarity:"B", cost:1, type:"Follower", text:"A tiny spirit of the woods." },
+
+      // Royal
+      { id:"roy-l1", name:"騎士王 オーギュスト", class:"Royal", rarity:"L", cost:7, type:"Follower", text:"Give allied followers +1/+1." },
+      { id:"roy-l2", name:"白銀の覇者", class:"Royal", rarity:"L", cost:8, type:"Follower", text:"Storm." },
+      { id:"roy-g1", name:"ブレードコマンダー", class:"Royal", rarity:"G", cost:5, type:"Follower", text:"Enhance soldiers." },
+      { id:"roy-s1", name:"渾身の一振り", class:"Royal", rarity:"S", cost:2, type:"Spell", text:"Deal 3 to a follower." },
+      { id:"roy-b1", name:"兵士", class:"Royal", rarity:"B", cost:2, type:"Follower", text:"The backbone of the army." },
+
+      // Witch
+      { id:"wit-l1", name:"超越の大魔道士", class:"Witch", rarity:"L", cost:9, type:"Follower", text:"Reduce spells by 1." },
+      { id:"wit-l2", name:"極光の錬金術師", class:"Witch", rarity:"L", cost:6, type:"Follower", text:"Spellboost synergy." },
+      { id:"wit-g1", name:"魔導の巨兵", class:"Witch", rarity:"G", cost:7, type:"Follower", text:"Ward." },
+      { id:"wit-s1", name:"知恵の光", class:"Witch", rarity:"S", cost:1, type:"Spell", text:"Draw 1." },
+      { id:"wit-b1", name:"魔術師見習い", class:"Witch", rarity:"B", cost:2, type:"Follower", text:"Spellboost: +1/+0." },
+
+      // Dragon
+      { id:"dra-l1", name:"覇炎龍 バハムート", class:"Dragon", rarity:"L", cost:10, type:"Follower", text:"Destroy all other followers." },
+      { id:"dra-l2", name:"蒼翼の覇者", class:"Dragon", rarity:"L", cost:8, type:"Follower", text:"Ramp 1." },
+      { id:"dra-g1", name:"ドラゴンナイト", class:"Dragon", rarity:"G", cost:5, type:"Follower", text:"Bane." },
+      { id:"dra-s1", name:"ブレイジングブレス", class:"Dragon", rarity:"S", cost:1, type:"Spell", text:"Deal 2 to a follower." },
+      { id:"dra-b1", name:"竜の託宣", class:"Dragon", rarity:"B", cost:2, type:"Spell", text:"Gain 1 play point orb." },
+
+      // Nightmare
+      { id:"nig-l1", name:"冥界の主 ハデス", class:"Nightmare", rarity:"L", cost:9, type:"Follower", text:"If X >= 20, win the game." },
+      { id:"nig-l2", name:"吸血姫 ヴァンピィ", class:"Nightmare", rarity:"L", cost:3, type:"Follower", text:"Deal 1 to both leaders." },
+      { id:"nig-g1", name:"夜の眷属", class:"Nightmare", rarity:"G", cost:4, type:"Follower", text:"Lifedrain." },
+      { id:"nig-s1", name:"ソウルコンバージョン", class:"Nightmare", rarity:"S", cost:2, type:"Spell", text:"Draw 2, destroy allied follower." },
+      { id:"nig-b1", name:"ヴァンパイアバット", class:"Nightmare", rarity:"B", cost:1, type:"Follower", text:"A pesky bat." },
+
+      // Bishop
+      { id:"bis-l1", name:"創世の聖女", class:"Bishop", rarity:"L", cost:7, type:"Follower", text:"Heal 3 to leader." },
+      { id:"bis-l2", name:"ジャンヌダルク", class:"Bishop", rarity:"L", cost:6, type:"Follower", text:"Deal 3 to all enemies." },
+      { id:"bis-g1", name:"聖なる願い", class:"Bishop", rarity:"G", cost:2, type:"Amulet", text:"Draw over turns." },
+      { id:"bis-s1", name:"詠唱：白翼への祈り", class:"Bishop", rarity:"S", cost:1, type:"Amulet", text:"Countdown 3, summon 2/2." },
+      { id:"bis-b1", name:"修道女", class:"Bishop", rarity:"B", cost:2, type:"Follower", text:"Ward." },
+
+      // Nemesis
+      { id:"nem-l1", name:"機構の解放者", class:"Nemesis", rarity:"L", cost:7, type:"Follower", text:"Accelerate synergy." },
+      { id:"nem-l2", name:"絶傑・リーシェナ", class:"Nemesis", rarity:"L", cost:8, type:"Follower", text:"Artifact synergy." },
+      { id:"nem-g1", name:"アーティファクトの同調", class:"Nemesis", rarity:"G", cost:2, type:"Spell", text:"Generate artifacts." },
+      { id:"nem-s1", name:"量産", class:"Nemesis", rarity:"S", cost:2, type:"Spell", text:"Copy a card in hand." },
+      { id:"nem-b1", name:"アナライズアーティファクト", class:"Nemesis", rarity:"B", cost:2, type:"Follower", text:"Draw 1 on death." },
+    ];
+
+    // -------------------- Helpers --------------------
+    const $ = (q) => document.querySelector(q);
+    const $$ = (q) => Array.from(document.querySelectorAll(q));
+
+    const poolByClass = (cls) => MOCK_CARDS.filter(c => c.class === cls);
+    const legendsByClass = (cls) => poolByClass(cls).filter(c => c.rarity === "L");
+    const rngPick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+    function twoCardPreviewForClass(cls){
+      const legends = legendsByClass(cls);
+      const pool = poolByClass(cls);
+      const first = rngPick(legends);
+      let second = rngPick(pool);
+      let i=0;
+      while(second.id === first.id && i<10){
+        second = rngPick(pool); i++;
+      }
+      return [first, second];
+    }
+
+    function rollTwo(pool){
+      let a = rngPick(pool);
+      let b = rngPick(pool);
+      let i=0;
+      while(b.id === a.id && i<10){
+        b = rngPick(pool); i++;
+      }
+      return [a,b];
+    }
+
+    function rarityBadge(r){
+      const map = {
+        L: "from-yellow-200 to-yellow-400 text-yellow-900",
+        G: "from-amber-200 to-amber-400 text-amber-900",
+        S: "from-zinc-200 to-zinc-300 text-zinc-900",
+        B: "from-stone-200 to-stone-300 text-stone-900",
+      };
+      return `<span class="px-2 py-0.5 rounded-md text-xs font-semibold bg-gradient-to-r ${map[r]}">${r}</span>`;
+    }
+
+    function cardTile(card, withButton=false, btnLabel="このカードを選ぶ", btnId=""){
+      return `
+        <div class="transition-base tile">
+          <div class="cursor-pointer overflow-hidden rounded-2xl border bg-white card-shadow ${card.rarity==='L'?'ring-sel':''}">
+            <div class="h-28 w-full bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
+              <span class="text-4xl">🎴</span>
+            </div>
+            <div class="p-3 space-y-2">
+              <div class="flex items-center gap-2">
+                ${rarityBadge(card.rarity)}
+                <span class="text-xs px-2 py-0.5 rounded-full bg-slate-100 border">${card.class}</span>
+                <span class="ml-auto text-xs font-mono">PP ${card.cost}</span>
+              </div>
+              <div class="text-sm font-semibold leading-tight">${card.name}</div>
+              <p class="text-xs text-slate-500 line-clamp-2">${card.text}</p>
+            </div>
+          </div>
+          ${withButton ? `
+            <div class="mt-2">
+              <button id="${btnId}" class="w-full px-3 py-2 rounded-xl bg-indigo-600 text-white text-sm hover:bg-indigo-700 transition-base">${btnLabel}</button>
+            </div>` : ``}
+        </div>
+      `;
+    }
+
+    function renderDeckList(ulEl, cards){
+      const map = new Map();
+      for(const c of cards) map.set(c.name, (map.get(c.name)||0)+1);
+      const rows = Array.from(map.entries()).sort((a,b)=>a[0].localeCompare(b[0]));
+      ulEl.innerHTML = rows.map(([name, ct]) => `
+        <li class="px-3 py-2 flex items-center justify-between">
+          <span>${name}</span>
+          <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-100 border">x${ct}</span>
+        </li>
+      `).join("");
+      return rows.map(r => `${r[0]} x${r[1]}`).join("\n");
+    }
+
+    // -------------------- State --------------------
+    let phase = "class"; // class | picking | done
+    let selectedClass = null;
+    let preview = {}; // { className: [card, card] }
+    let deck = [];
+    let pair = [];
+
+    // -------------------- DOM refs --------------------
+    const phaseClass = $("#phase-class");
+    const phasePicking = $("#phase-picking");
+    const phaseDone = $("#phase-done");
+    const btnReset = $("#btnReset");
+    const classTabs = $("#classTabs");
+    const classPreview = $("#classPreview");
+    const seedInput = $("#seedInput");
+
+    const pickedClassEl = $("#pickedClass");
+    const progressBar = $("#progressBar");
+    const progressText = $("#progressText");
+    const pickPair = $("#pickPair");
+    const remainingText = $("#remainingText");
+    const deckList = $("#deckList");
+    const deckCount = $("#deckCount");
+    const btnCopy = $("#btnCopy");
+    const btnSave = $("#btnSave");
+
+    const doneClassEl = $("#doneClass");
+    const deckListDone = $("#deckListDone");
+    const btnCopy2 = $("#btnCopy2");
+    const btnSave2 = $("#btnSave2");
+    const btnAgain = $("#btnAgain");
+
+    // -------------------- Phase control --------------------
+    function setPhase(p){
+      phase = p;
+      phaseClass.classList.toggle("hidden", p!=="class");
+      phasePicking.classList.toggle("hidden", p!=="picking");
+      phaseDone.classList.toggle("hidden", p!=="done");
+      btnReset.classList.toggle("hidden", p==="class");
+    }
+
+    function resetAll(){
+      selectedClass = null;
+      deck = [];
+      pair = [];
+      preview = Object.fromEntries(CLASSES.map(c => [c, twoCardPreviewForClass(c)]));
+      renderClassPhase();
+      setPhase("class");
+    }
+
+    // -------------------- Rendering --------------------
+    function renderClassPhase(active = CLASSES[0]){
+      // Tabs
+      classTabs.innerHTML = CLASSES.map(c => `
+        <button data-class="${c}" class="px-3 py-2 rounded-xl border text-sm bg-white hover:bg-slate-50 transition-base ${c===active?'bg-slate-100 border-slate-300':''}">
+          ${c}
+        </button>
+      `).join("");
+
+      // Preview
+      const cards = preview[active] || twoCardPreviewForClass(active);
+      preview[active] = cards; // cache
+      classPreview.innerHTML = `
+        <div class="flex items-center justify-between">
+          <h3 class="font-semibold">${active} — プレビュー</h3>
+          <button id="btnStartClass" class="px-3 py-2 rounded-xl bg-indigo-600 text-white text-sm hover:bg-indigo-700 transition-base">このクラスで始める</button>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          ${cards.map((c, idx) => cardTile(c, false, "", `pv-${idx}`)).join("")}
+        </div>
+      `;
+
+      // bind
+      $$("#classTabs button").forEach(btn=>{
+        btn.addEventListener("click", () => renderClassPhase(btn.dataset.class));
+      });
+      $("#btnStartClass").addEventListener("click", () => startWithClass(active));
+    }
+
+    function startWithClass(cls){
+      selectedClass = cls;
+      setPhase("picking");
+      deck = [];
+      pair = rollTwo(poolByClass(cls));
+      renderPicking();
+    }
+
+    function renderPicking(){
+      pickedClassEl.textContent = selectedClass;
+      const pct = Math.round((deck.length/30)*100);
+      progressBar.style.width = pct + "%";
+      progressText.textContent = `${deck.length} / 30`;
+      remainingText.textContent = `残り ${30 - deck.length} 枚選択`;
+      deckCount.textContent = deck.length;
+
+      // pair
+      pickPair.innerHTML = pair.map((c, i) => `
+        <div>${cardTile(c, true, "このカードを選ぶ", "pick-"+i)}</div>
+      `).join("");
+
+      // bind pair buttons
+      pair.forEach((c, i) => {
+        $("#pick-"+i).addEventListener("click", () => pickCard(c));
+      });
+
+      // deck list
+      renderDeckList(deckList, deck);
+    }
+
+    function pickCard(card){
+      deck.push(card);
+      if(deck.length >= 30){
+        renderDone();
+        setPhase("done");
+        return;
+      }
+      pair = rollTwo(poolByClass(selectedClass));
+      renderPicking();
+    }
+
+    function renderDone(){
+      doneClassEl.textContent = selectedClass;
+      const txt = renderDeckList(deckListDone, deck);
+      // Also refresh picking panel (counts frozen at 30)
+      renderPicking();
+
+      // Bind copy/save both places
+      const doCopy = async () => {
+        const text = renderDeckList(deckList, deck);
+        try{ await navigator.clipboard.writeText(text); alert("コピーしました"); }
+        catch{ alert("コピーに失敗しました"); }
+      };
+      const doCopy2 = async () => {
+        const text = renderDeckList(deckListDone, deck);
+        try{ await navigator.clipboard.writeText(text); alert("コピーしました"); }
+        catch{ alert("コピーに失敗しました"); }
+      };
+      const doSave = () => {
+        const text = renderDeckList(deckList, deck);
+        const blob = new Blob([text], {type:"text/plain;charset=utf-8"});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url; a.download = "decklist.txt"; a.click();
+        URL.revokeObjectURL(url);
+      };
+      const doSave2 = () => {
+        const text = renderDeckList(deckListDone, deck);
+        const blob = new Blob([text], {type:"text/plain;charset=utf-8"});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url; a.download = "decklist.txt"; a.click();
+        URL.revokeObjectURL(url);
+      };
+
+      btnCopy.onclick = doCopy;
+      btnSave.onclick = doSave;
+      btnCopy2.onclick = doCopy2;
+      btnSave2.onclick = doSave2;
+    }
+
+    // -------------------- Global bindings --------------------
+    btnReset.addEventListener("click", resetAll);
+    btnAgain.addEventListener("click", resetAll);
+
+    btnCopy.addEventListener("click", async ()=>{
+      const text = renderDeckList(deckList, deck);
+      try{ await navigator.clipboard.writeText(text); alert("コピーしました"); }
+      catch{ alert("コピーに失敗しました"); }
+    });
+
+    btnSave.addEventListener("click", ()=>{
+      const text = renderDeckList(deckList, deck);
+      const blob = new Blob([text], {type:"text/plain;charset=utf-8"});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url; a.download = "decklist.txt"; a.click();
+      URL.revokeObjectURL(url);
+    });
+
+    // -------------------- Init --------------------
+    resetAll();               // state + preview生成
+    renderClassPhase();       // 初回描画
+    setPhase("class");        // 画面表示
+  </script>
+</body>
+</html>
