@@ -43,7 +43,23 @@
   .detail-link:hover{text-decoration:underline}
 
   /* ミニカード */
-  .deck{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+  .deck{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px;max-height:420px;overflow:auto;padding-right:2px}
+  .mini{border:1px solid #2b3b53;border-radius:10px;padding:6px;background:#0f1520}
+  .mini img{width:100%;height:96px;object-fit:cover;border-radius:6px}
+  .mini .t{font-size:11px;margin-top:4px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .legendary{color:#cbb5ff}.goldy{color:#ffd88d}.silvery{color:#e6edf5}.bronzy{color:#f1d6bf}
+
+  /* モーダル */
+  .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;z-index:100}
+  .modal.show{display:flex}
+  .backdrop{position:absolute;inset:0;background:rgba(0,0,0,.65)}
+  .modal-card{position:relative;background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid #2a394b;border-radius:16px;max-width:1100px;width:92vw;max-height:86vh;box-shadow:0 10px 30px rgba(0,0,0,.45);padding:16px;overflow:hidden}
+  .modal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+  .closebtn{cursor:pointer;border:1px solid #2b3b53;border-radius:10px;padding:6px 10px;background:#142031;color:#eaf4ff;font-weight:700}
+  .modal-body{overflow:auto}
+  .modal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
+  .modal-card .mini img{height:140px}
+  .modal-card .mini .t{font-size:12px}
   .mini{border:1px solid #2b3b53;border-radius:10px;padding:6px;background:#0f1520}
   .mini img{width:100%;height:96px;object-fit:cover;border-radius:6px}
   .mini .t{font-size:11px;margin-top:4px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -60,6 +76,20 @@
 <main id="app">
   <div id="loading" class="panel"><div class="title">読み込み中…</div><div class="sub">cards.json を読み込んでいます</div></div>
 </main>
+
+<!-- Deck Modal -->
+<div id="deckModal" class="modal" aria-hidden="true">
+  <div class="backdrop" onclick="closeDeckModal()"></div>
+  <div class="modal-card">
+    <div class="modal-head">
+      <div class="title" style="margin:0">選択済みデッキ</div>
+      <button class="closebtn" onclick="closeDeckModal()">閉じる</button>
+    </div>
+    <div id="deckModalBody" class="modal-body">
+      <div class="modal-grid" id="deckModalGrid"></div>
+    </div>
+  </div>
+</div>
 
 <script>
 /* ====== ユーティリティ ====== */
@@ -249,7 +279,9 @@ function renderPick(){
         <div class="hint">※再抽選時は少しだけ上位レアが出やすくなります</div>
       </div>
       <hr style="border:0;border-top:1px solid #2b3b53;margin:14px 0">
-      <div class="title" style="font-size:16px;margin-bottom:8px">デッキ</div>
+      <div class="title" style="font-size:16px;margin-bottom:8px;display:flex;align-items:center;justify-content:space-between">デッキ
+        <button class="btn" style="padding:6px 10px;font-size:12px" onclick="openDeckModal()">拡大表示</button>
+      </div>
       <div class="deck" id="deckView"></div>
     </div>
 
@@ -270,6 +302,21 @@ function renderPick(){
 function renderDeckMini(){
   const wrap = $('#deckView');
   wrap.innerHTML = state.deck.map(c=>`
+    <div class="mini">
+      <img src="${c.img}" alt="${c.name}">
+      <div class="t ${c.rarity==='レジェンド'?'legendary':c.rarity==='ゴールド'?'goldy':c.rarity==='シルバー'?'silvery':'bronzy'}">${c.rarity}・${c.name}</div>
+    </div>
+  `).join('');
+}
+
+function openDeckModal(){
+  renderDeckModal();
+  $('#deckModal').classList.add('show');
+}
+function closeDeckModal(){ $('#deckModal').classList.remove('show'); }
+function renderDeckModal(){
+  const grid = $('#deckModalGrid');
+  grid.innerHTML = state.deck.map(c=>`
     <div class="mini">
       <img src="${c.img}" alt="${c.name}">
       <div class="t ${c.rarity==='レジェンド'?'legendary':c.rarity==='ゴールド'?'goldy':c.rarity==='シルバー'?'silvery':'bronzy'}">${c.rarity}・${c.name}</div>
