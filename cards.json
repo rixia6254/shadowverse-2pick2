@@ -1,0 +1,2202 @@
+[
+  {
+    "name": "勇壮の堕天使・オリヴィエ",
+    "class": "ニュートラル",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/180912_ixhp5.webp",
+    "effect": "自分のデッキから2枚を引く。自分のリーダーを2回復。自分のPPを2回復。\n自分の場の他の進化前のフォロワー1枚を選ぶ。それは超進化する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78928337"
+  },
+  {
+    "name": "最果ての罪・サタン",
+    "class": "ニュートラル",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/135415_vhu8k.webp",
+    "effect": "自分のデッキを「アポカリプスデッキ」にする。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934184"
+  },
+  {
+    "name": "ベルエンジェル・リア",
+    "class": "ニュートラル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/114559_9pdfe.webp",
+    "effect": "自分のデッキから1枚を引く。\n自分のデッキから1枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934199"
+  },
+  {
+    "name": "楽朗の天宮・フィルドア",
+    "class": "ニュートラル",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/114748_en9iu.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それを破壊。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934349"
+  },
+  {
+    "name": "熾天使の福音",
+    "class": "ニュートラル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/122705_ijoy8.webp",
+    "effect": "自分のデッキから2枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934355"
+  },
+  {
+    "name": "神の雷霆",
+    "class": "ニュートラル",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/122711_zegd1.webp",
+    "effect": "相手の場の攻撃力最大のフォロワーからランダム1枚を破壊。相手の場のフォロワーすべてに1ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934358"
+  },
+  {
+    "name": "不屈のファイター",
+    "class": "ニュートラル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211503_8gs6h.webp",
+    "effect": "これは+3/+3する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000193"
+  },
+  {
+    "name": "グリードケルブ・ルビィ",
+    "class": "ニュートラル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211503_h4xvp.webp",
+    "effect": "自分の手札1枚を選ぶ。それをデッキに戻す。自分のデッキから1枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000199"
+  },
+  {
+    "name": "探偵のルーペ",
+    "class": "ニュートラル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211505_cfo7e.webp",
+    "effect": "これを破壊。相手の場のフォロワー1枚を選ぶ。それはを失う。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000205"
+  },
+  {
+    "name": "煌響の使者・アンリエット",
+    "class": "ニュートラル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211502_v960e.webp",
+    "effect": "自分のリーダーを2回復。\n2回復ではなく4回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000292"
+  },
+  {
+    "name": "冒険者のギルド",
+    "class": "ニュートラル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211501_iuqs1.webp",
+    "effect": "自分のデッキからフォロワー1枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000295"
+  },
+  {
+    "name": "迸る光明・アポロン",
+    "class": "ニュートラル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211459_upkij.webp",
+    "effect": "相手の場のフォロワーすべてに1ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000298"
+  },
+  {
+    "name": "観察の探偵",
+    "class": "ニュートラル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211501_z40hn.webp",
+    "effect": "『探偵のルーペ』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000304"
+  },
+  {
+    "name": "激震のゴリアテ",
+    "class": "ニュートラル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211504_72voc.webp",
+    "effect": "",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000382"
+  },
+  {
+    "name": "ゴブリンの襲撃",
+    "class": "ニュートラル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211508_erq01.webp",
+    "effect": "『ゴブリン』5枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000457"
+  },
+  {
+    "name": "キャラバンマンモス",
+    "class": "ニュートラル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211508_9atb1.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それを手札に戻す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000538"
+  },
+  {
+    "name": "運命の黄昏・オーディン",
+    "class": "ニュートラル",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120757_oxve0.webp",
+    "effect": "相手の場のカード1枚を選ぶ。それを消滅。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108550"
+  },
+  {
+    "name": "颶風の天業・グリームニル",
+    "class": "ニュートラル",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120758_t3n2m.webp",
+    "effect": "自分は『クレスト：颶風の天業・グリームニル』を持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108553"
+  },
+  {
+    "name": "絆の天使・レイナ",
+    "class": "ニュートラル",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120758_b32tu.webp",
+    "effect": "自分の場の進化前のフォロワーすべては進化する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108556"
+  },
+  {
+    "name": "雷火の双神・フニカル＆ヤヴンハール",
+    "class": "ニュートラル",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120758_rc57f.webp",
+    "effect": "これは進化する。\nこれが進化後なら、相手の場のフォロワーからランダム1枚に4ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108559"
+  },
+  {
+    "name": "メイドエンジェル・チェレッタ",
+    "class": "ニュートラル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120757_e18do.webp",
+    "effect": "超進化可能ターンなら、これは+0/+3する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108562"
+  },
+  {
+    "name": "二刀のゴブリン",
+    "class": "ニュートラル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120758_z94t0.webp",
+    "effect": "自分の場に超進化後のフォロワーがあるなら、相手の場のフォロワー1枚を選ぶ。それに4ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108565"
+  },
+  {
+    "name": "リバースチェンジ",
+    "class": "ニュートラル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120757_gjoiy.webp",
+    "effect": "場のフォロワー1枚を選ぶ。それは+2/-2する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108568"
+  },
+  {
+    "name": "自然の妖精姫・アリア",
+    "class": "エルフ",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/120933_rky5d.webp",
+    "effect": "自分は「クレスト：自然の妖精姫・アリア」を持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78983660"
+  },
+  {
+    "name": "殺戮のリノセウス",
+    "class": "エルフ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/120934_h1ksn.webp",
+    "effect": "これは+X/+0する。Xは自分のである。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78985574"
+  },
+  {
+    "name": "アドベンチャーエルフ・メイ",
+    "class": "エルフ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211505_odbt8.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それに3ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000157"
+  },
+  {
+    "name": "純朴なるウォーターフェアリー",
+    "class": "エルフ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211502_78uah.webp",
+    "effect": "『フェアリー』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000160"
+  },
+  {
+    "name": "虫の知らせ",
+    "class": "エルフ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211500_7g542.webp",
+    "effect": "自分の場のカード1枚を選ぶ。それを手札に戻す。相手の場のフォロワーからランダム1枚に2ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000163"
+  },
+  {
+    "name": "妖精の招集",
+    "class": "エルフ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211505_hv3b4.webp",
+    "effect": "『フェアリー』2枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000166"
+  },
+  {
+    "name": "フェアリーテイマー",
+    "class": "エルフ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211505_2rcy9.webp",
+    "effect": "『フェアリー』2枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000202"
+  },
+  {
+    "name": "ストレイビーストマン",
+    "class": "エルフ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211507_u8ymb.webp",
+    "effect": "自分のを+1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000208"
+  },
+  {
+    "name": "舞い踊る妖精",
+    "class": "エルフ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211502_6hfel.webp",
+    "effect": "自分の場の他のフォロワーすべては+1/+1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000211"
+  },
+  {
+    "name": "ベビーカーバンクル",
+    "class": "エルフ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211506_a89n6.webp",
+    "effect": "自分の場の他のカード1枚を選ぶ。それを手札に戻す。\n自分のPPを3回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000214"
+  },
+  {
+    "name": "ピュアクリスタリア・リリィ",
+    "class": "エルフ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211502_onse5.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それは体力1になる。\n自分のデッキから1枚を引く。相手の場のフォロワー1枚を選ぶ。それに1ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000217"
+  },
+  {
+    "name": "繚乱の庭",
+    "class": "エルフ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211500_4y952.webp",
+    "effect": "『フェアリー』1枚を自分の手札に加える。\n自分の妖精・フォロワーが場に出たとき、相手の場のフォロワーからランダム1枚に1ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000220"
+  },
+  {
+    "name": "燐光の岩",
+    "class": "エルフ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211459_dwml9.webp",
+    "effect": "これを破壊。自分の場のフォロワー1枚を選ぶ。それは+1/+1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000223"
+  },
+  {
+    "name": "コンタクトフェアリー",
+    "class": "エルフ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211508_zjm0v.webp",
+    "effect": "『フェアリー』1枚を自分の場に出す。『フェアリー』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000301"
+  },
+  {
+    "name": "働きバッタ",
+    "class": "エルフ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211459_ve1rf.webp",
+    "effect": "自分のデッキからコストXのフォロワー1枚を引く。Xは自分のである。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000307"
+  },
+  {
+    "name": "ビギンズブレイダー・アマツ",
+    "class": "エルフ",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211503_tch3x.webp",
+    "effect": "これは+X/+Xする。Xは自分の手札の妖精・フォロワーの枚数である。\n「相手の場のフォロワーからランダム1枚に1ダメージ。」をX回行う。Xは自分の手札の妖精・フォロワーの枚数である。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000310"
+  },
+  {
+    "name": "薫交の思慕",
+    "class": "エルフ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211503_a8rm9.webp",
+    "effect": "『森の神秘』1枚を自分の手札に加える。自分のデッキから1枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000313"
+  },
+  {
+    "name": "聖樹の杖",
+    "class": "エルフ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211500_139fu.webp",
+    "effect": "これを破壊。自分の場の他のカード1枚を選ぶ。それを手札に戻す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000316"
+  },
+  {
+    "name": "温厚なるトレント",
+    "class": "エルフ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211506_cgrt5.webp",
+    "effect": "これは進化する。\n自分のリーダーを2回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000385"
+  },
+  {
+    "name": "言の葉のエルダーウィードマン",
+    "class": "エルフ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211459_xutea.webp",
+    "effect": "相手の場のフォロワーからランダム1枚に3ダメージ。(3)1枚ではなく3枚。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000388"
+  },
+  {
+    "name": "薫交の天宮・バックウッド",
+    "class": "エルフ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211500_xfzdt.webp",
+    "effect": "自分のデッキから2枚を引く。\n相手の場のフォロワーすべてにXダメージを割りふる。Xは自分の手札の枚数である。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000460"
+  },
+  {
+    "name": "ソニックアーチャー・セルウィン",
+    "class": "エルフ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211506_aonu9.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それを手札に戻す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000541"
+  },
+  {
+    "name": "フロストクリスタリア・エリン",
+    "class": "エルフ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211505_q3ivn.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それを破壊。自分のリーダーを2回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000544"
+  },
+  {
+    "name": "深奥のフェアリービースト",
+    "class": "エルフ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211502_gd859.webp",
+    "effect": "自分のデッキから1枚を引く。自分のリーダーをX回復。Xは自分の手札の枚数である。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000565"
+  },
+  {
+    "name": "煌撃の戦士・ベイル",
+    "class": "エルフ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211459_pwl4q.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それに4ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000568"
+  },
+  {
+    "name": "豊麗なるローズクイーン",
+    "class": "エルフ",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211459_e09d2.webp",
+    "effect": "自分の手札のコスト1以下のエルフ・カードすべては『薔薇の閃撃』に変身する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000589"
+  },
+  {
+    "name": "翅の女王・ティターニア",
+    "class": "エルフ",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/113635_4ab6p.webp",
+    "effect": "『フェアリー』1枚を自分の場に出す。自分は『クレスト：翅の女王・ティターニア』を持つ。\n相手の場のフォロワー1枚を選ぶ。それは『フェアリー』に変身する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108346"
+  },
+  {
+    "name": "絡み付く密林・リマーガ",
+    "class": "エルフ",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/113634_ohpc6.webp",
+    "effect": "相手の場のフォロワー2枚を選ぶ。相手のターン終了まで、それは「フォロワーやリーダーを攻撃できない。」を持つ。\n相手の場のフォロワー2枚を選ぶ。それは「ターン終了時、自分のリーダーに1ダメージ。これに2ダメージ。」を持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108349"
+  },
+  {
+    "name": "フォレストシバルリー・シンシア",
+    "class": "エルフ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/113634_wpnl3.webp",
+    "effect": "『フェアリー』2枚を自分の場に出す。\n自分の場の妖精・フォロワーすべては+1/+0する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108352"
+  },
+  {
+    "name": "花園の導き",
+    "class": "エルフ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/113635_fg9ci.webp",
+    "effect": "エルフ・カード",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108355"
+  },
+  {
+    "name": "樹上からの急襲",
+    "class": "エルフ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/113635_5i1rh.webp",
+    "effect": "「相手の場のフォロワーからランダム1枚に2ダメージ。」を1回行う。(3)1回ではなく2回。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108358"
+  },
+  {
+    "name": "フェアリーフェンサー",
+    "class": "エルフ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/113634_nhslj.webp",
+    "effect": "『フェアリー』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108361"
+  },
+  {
+    "name": "アーデントエルフ・レオネル",
+    "class": "エルフ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/113634_o1el3.webp",
+    "effect": "『ベビーカーバンクル』2枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108364"
+  },
+  {
+    "name": "森の行進",
+    "class": "エルフ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/113636_mgrqw.webp",
+    "effect": "『温厚なるトレント』3枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108367"
+  },
+  {
+    "name": "木槌のドワーフ",
+    "class": "エルフ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/113635_v5esf.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それに4ダメージ。(3)1枚を選ぶのではなくすべて。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108370"
+  },
+  {
+    "name": "ワイルドガール",
+    "class": "エルフ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/113635_g9ltx.webp",
+    "effect": "",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108373"
+  },
+  {
+    "name": "王断の天宮・スタチウム",
+    "class": "ロイヤル",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/151812_7a2k0.webp",
+    "effect": "「ナイト」2枚を自分の場に出す。自分の場の他のフォロワーすべては+1/+1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935537"
+  },
+  {
+    "name": "白銀の騎士団長・エミリア",
+    "class": "ロイヤル",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/151833_em2ak.webp",
+    "effect": "自分のデッキからロイヤル・フォロワー2枚を引く。自分のPPを3回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935543"
+  },
+  {
+    "name": "勇猛のルミナスランサー",
+    "class": "ロイヤル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/151843_l2p6o.webp",
+    "effect": "「ナイト」1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935546"
+  },
+  {
+    "name": "煌刃の勇者・アマリア",
+    "class": "ロイヤル",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/151853_8ae2j.webp",
+    "effect": "「スティールナイト」4枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935549"
+  },
+  {
+    "name": "レヴィオンの迅雷・アルベール",
+    "class": "ロイヤル",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/120932_h2mst.webp",
+    "effect": "相手の場のフォロワーすべてに3ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78985571"
+  },
+  {
+    "name": "刹那のクイックブレイダー",
+    "class": "ロイヤル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211501_2kbsw.webp",
+    "effect": "",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000169"
+  },
+  {
+    "name": "統率のルミナスナイト",
+    "class": "ロイヤル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211501_mjbn3.webp",
+    "effect": "自分の兵士・フォロワーが場に出たとき、ターン終了まで、これは+1/+0する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000172"
+  },
+  {
+    "name": "王家の御者",
+    "class": "ロイヤル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211503_j9oa7.webp",
+    "effect": "『ナイト』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000226"
+  },
+  {
+    "name": "異端の侍",
+    "class": "ロイヤル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211504_dl1mp.webp",
+    "effect": "超進化可能ターンなら、これはを持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000229"
+  },
+  {
+    "name": "忍びのムササビ",
+    "class": "ロイヤル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211500_qolsg.webp",
+    "effect": "『忍びのムササビ』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000232"
+  },
+  {
+    "name": "メイドの作法",
+    "class": "ロイヤル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211504_2ui9v.webp",
+    "effect": "自分の手札1枚を選ぶ。それをデッキに戻す。自分のデッキからロイヤル・フォロワー2枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000235"
+  },
+  {
+    "name": "魔煌のトリックスター・ラスティ",
+    "class": "ロイヤル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211458_wg25p.webp",
+    "effect": "自分のデッキから『魔煌のトリックスター・ラスティ』すべてを引く。それはを持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000319"
+  },
+  {
+    "name": "愛の騎士・イアン",
+    "class": "ロイヤル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211504_ri4t6.webp",
+    "effect": "自分の場の他のフォロワー1枚を選ぶ。それは+1/+1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000322"
+  },
+  {
+    "name": "救援のルミナスヒーラー・リララ",
+    "class": "ロイヤル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211504_9i5nk.webp",
+    "effect": "自分の兵士・フォロワーが場に出たとき、自分のリーダーを1回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000325"
+  },
+  {
+    "name": "ミリタリードッグ",
+    "class": "ロイヤル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211508_lenjo.webp",
+    "effect": "(6)『ミリタリードッグ』2枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000328"
+  },
+  {
+    "name": "サイレントスナイパー・ワルツ",
+    "class": "ロイヤル",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211506_vbl86.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それに5ダメージ。(6)これは+2/+2してを持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000331"
+  },
+  {
+    "name": "常在戦場・カゲミツ",
+    "class": "ロイヤル",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211501_5ky36.webp",
+    "effect": "自分は『クレスト：常在戦場・カゲミツ』を持つ。これはを持つ。(2)『常在戦場・カゲミツ』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000334"
+  },
+  {
+    "name": "王断の威光",
+    "class": "ロイヤル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211507_9d6sv.webp",
+    "effect": "（1）『スティールナイト』1枚と『ナイト』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000337"
+  },
+  {
+    "name": "バトルマーチャント",
+    "class": "ロイヤル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211507_n73jg.webp",
+    "effect": "自分のデッキから1枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000391"
+  },
+  {
+    "name": "剣士の斬撃",
+    "class": "ロイヤル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211505_mar4u.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それを破壊。『スティールナイト』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000403"
+  },
+  {
+    "name": "正統なる王冠",
+    "class": "ロイヤル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/211506_cyt7m.webp",
+    "effect": "自分のフォロワーが場に出たとき、それは+1/+1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000406"
+  },
+  {
+    "name": "卓越のルミナスメイジ",
+    "class": "ロイヤル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213047_ictur.webp",
+    "effect": "『スティールナイト』3枚を自分の場に出す。自分の兵士・フォロワーが場に出たとき、それはを持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000463"
+  },
+  {
+    "name": "ピースディーラー・エルネスタ",
+    "class": "ロイヤル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213047_h6ijb.webp",
+    "effect": "自分の場の他のフォロワーすべては+1/+1する。と同じ能力が働く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000502"
+  },
+  {
+    "name": "レヴィオンアックス・ジェノ",
+    "class": "ロイヤル",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213050_mlq0s.webp",
+    "effect": "1ターンに2回攻撃できる。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000547"
+  },
+  {
+    "name": "テンタクルバイト",
+    "class": "ロイヤル",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213051_dnalb.webp",
+    "effect": "相手の場のフォロワー1枚か相手のリーダーを選ぶ。それに5ダメージ。自分のリーダーを5回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000550"
+  },
+  {
+    "name": "ケンタウロスの騎士",
+    "class": "ロイヤル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213052_0oizr.webp",
+    "effect": "",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000571"
+  },
+  {
+    "name": "静寂のアナテマ・ギルダリア",
+    "class": "ロイヤル",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115039_9iwb4.webp",
+    "effect": "これは超進化する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108376"
+  },
+  {
+    "name": "レヴィオンの超越者・ユリウス",
+    "class": "ロイヤル",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115038_4biye.webp",
+    "effect": "『ナイト』2枚を相手の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108379"
+  },
+  {
+    "name": "ソードプリンセス・ロゼ",
+    "class": "ロイヤル",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115038_u8l5a.webp",
+    "effect": "自分のデッキからコスト2以下のロイヤル・フォロワー1枚を引く。それのコストを0にする。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108382"
+  },
+  {
+    "name": "休日の王女・プリム",
+    "class": "ロイヤル",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115038_ivl84.webp",
+    "effect": "『静かなるメイド・ノーニャ』1枚を自分の手札に加える。\n自分の場の他のフォロワーすべては+1/+1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108385"
+  },
+  {
+    "name": "豪胆なる副団長・ゲルト",
+    "class": "ロイヤル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115037_sfv6t.webp",
+    "effect": "自分のターン終了時、自分の場に超進化後のフォロワーがあるなら、自分の場のフォロワーすべては+1/+1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108388"
+  },
+  {
+    "name": "オーディナリーナイト・ラキル",
+    "class": "ロイヤル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115039_71qbd.webp",
+    "effect": "自分のデッキからスペル1枚を引く。\n自分のPPを2回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108391"
+  },
+  {
+    "name": "三将姫の乱撃",
+    "class": "ロイヤル",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115037_0evpy.webp",
+    "effect": "1枚ではなく3枚。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108394"
+  },
+  {
+    "name": "トリガーメイド・セリエ",
+    "class": "ロイヤル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115039_emzdo.webp",
+    "effect": "相手の場のフォロワーからランダム2枚に1ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108397"
+  },
+  {
+    "name": "暗闘のニンジャマスター",
+    "class": "ロイヤル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115039_s703z.webp",
+    "effect": "",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108400"
+  },
+  {
+    "name": "商談成立",
+    "class": "ロイヤル",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115038_n7g8z.webp",
+    "effect": "自分のデッキから2枚を引く。相手は自身のデッキから1枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108403"
+  },
+  {
+    "name": "オーバーディメンション",
+    "class": "ウィッチ",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/120936_7d0ou.webp",
+    "effect": "これのコストを-1する。自分の手札すべてをデッキに戻す。自分のデッキから5枚を引く。自分の手札すべては5回スペルブーストする。自分のPPを上限まで回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78983963"
+  },
+  {
+    "name": "五行の果て・クオン",
+    "class": "ウィッチ",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/120934_vnu7z.webp",
+    "effect": "自分の場の式神・フォロワーすべてを破壊。「式神・貴人」1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78983975"
+  },
+  {
+    "name": "知恵の輝き",
+    "class": "ウィッチ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213049_kdzwg.webp",
+    "effect": "自分のデッキから1枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000175"
+  },
+  {
+    "name": "ストームブラスト",
+    "class": "ウィッチ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213054_bwlvk.webp",
+    "effect": "これのXを+1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000178"
+  },
+  {
+    "name": "魔女の錬金釜",
+    "class": "ウィッチ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213048_f9wds.webp",
+    "effect": "自分のデッキから1枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000181"
+  },
+  {
+    "name": "見習い占星術師",
+    "class": "ウィッチ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213048_1tgn5.webp",
+    "effect": "自分の手札1枚を選ぶ。それをデッキに戻す。自分のデッキから1枚を引く。自分の場の土の印を+1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000238"
+  },
+  {
+    "name": "アドラブルティーチャー・ミラ",
+    "class": "ウィッチ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213051_pqzej.webp",
+    "effect": "自分の手札すべては1回スペルブーストする。\n相手の場のフォロワー1枚を選ぶ。それに3ダメージ。自分の手札すべては1回スペルブーストする。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000241"
+  },
+  {
+    "name": "魔法の薬剤師・ペネロピー",
+    "class": "ウィッチ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213044_elsx0.webp",
+    "effect": "自分の場の土の印を+2する。\n自分のデッキから2枚を引く。自分のリーダーを2回復。自分の場の土の印を+2する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000244"
+  },
+  {
+    "name": "真理の召喚",
+    "class": "ウィッチ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213049_2rosh.webp",
+    "effect": "『クレイゴーレム』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000247"
+  },
+  {
+    "name": "虹の奇跡",
+    "class": "ウィッチ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213054_vlie4.webp",
+    "effect": "自分の手札のを持つカード1枚を選ぶ。それは1回スペルブーストする。自分のデッキから1枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000250"
+  },
+  {
+    "name": "閃光の魔法剣士",
+    "class": "ウィッチ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213044_lx4j2.webp",
+    "effect": "1つを選んでその能力が働く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000340"
+  },
+  {
+    "name": "オウルサモナー",
+    "class": "ウィッチ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213052_g4tx7.webp",
+    "effect": "自分の場の土の印を+1する。\n相手の場のフォロワー1枚を選ぶ。それに5ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000343"
+  },
+  {
+    "name": "理光の証明",
+    "class": "ウィッチ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213050_v3ryl.webp",
+    "effect": "1つを選んでその能力が働く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000346"
+  },
+  {
+    "name": "宿題やるですぅ！",
+    "class": "ウィッチ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213053_2rxin.webp",
+    "effect": "これのXを+1する。その後、Xが5以上なら、これは『成長したですぅ！』に変身する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000349"
+  },
+  {
+    "name": "相貌の魔女・レミラミ",
+    "class": "ウィッチ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213048_d75a0.webp",
+    "effect": "『ガーディアンゴーレム』1枚を自分の場に出す。\n自分の場のゴーレム・フォロワー1枚を選ぶ。それは進化する。それは+3/+3する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000409"
+  },
+  {
+    "name": "夢想のペンギンウィザード",
+    "class": "ウィッチ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213046_mujai.webp",
+    "effect": "自分のデッキから2枚を引く。\n自分の手札すべては2回スペルブーストする。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000412"
+  },
+  {
+    "name": "理光の天宮・エーデルワイス",
+    "class": "ウィッチ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213044_bctlx.webp",
+    "effect": "これは進化する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000415"
+  },
+  {
+    "name": "イラプション",
+    "class": "ウィッチ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213048_u4cq3.webp",
+    "effect": "自分のデッキから1枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000418"
+  },
+  {
+    "name": "ルーンブレイドコンダクター",
+    "class": "ウィッチ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213050_q92rd.webp",
+    "effect": "これは+1/+1する。\n相手の場のフォロワー1枚を選ぶ。それにXダメージ。Xはこれの攻撃力である。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000466"
+  },
+  {
+    "name": "ワンダーウィッチ・エミル",
+    "class": "ウィッチ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213053_jinyc.webp",
+    "effect": "これのコストを-1する。\n『クレイゴーレム』1枚を自分の場に出す。相手の場のフォロワーすべてにXダメージ。Xは自分の場のゴーレム・フォロワーの枚数である。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000469"
+  },
+  {
+    "name": "黎明の錬金術師・ノノ",
+    "class": "ウィッチ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213045_w8v62.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それにXダメージ。Xは自分の場の土の印の数である。\n自分は『クレスト：黎明の錬金術師・ノノ』を持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000472"
+  },
+  {
+    "name": "マナリアフレンズ・アン＆グレア",
+    "class": "ウィッチ",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213049_h1c4t.webp",
+    "effect": "『アンの大英霊』1枚を自分の場に出す。自分の手札すべては3回スペルブーストする。\n相手の場のフォロワー1枚を選ぶ。それに3ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000475"
+  },
+  {
+    "name": "マナリアの学徒・ウィリアム",
+    "class": "ウィッチ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213050_4nshe.webp",
+    "effect": "これのXを+1する。\n相手の場のフォロワーすべてにXダメージ。\n自分の手札すべては2回スペルブーストする。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000505"
+  },
+  {
+    "name": "鬼呼びの術",
+    "class": "ウィッチ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213053_u7b61.webp",
+    "effect": "これのコストを-1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000553"
+  },
+  {
+    "name": "スノーアウェイク",
+    "class": "ウィッチ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213053_hrsa7.webp",
+    "effect": "これのコストを-1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000574"
+  },
+  {
+    "name": "ブレイズデストロイヤー",
+    "class": "ウィッチ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213049_deoku.webp",
+    "effect": "これのコストを-1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000592"
+  },
+  {
+    "name": "アダマントアルケミスト・ノーマン",
+    "class": "ウィッチ",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114431_26uan.webp",
+    "effect": "（2）自分のデッキから3枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108406"
+  },
+  {
+    "name": "暴食のアナテマ・ララアンセム",
+    "class": "ウィッチ",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114433_qr4y7.webp",
+    "effect": "(2)『暴食のアナテマ・ララアンセム』1枚を自分の場に出す。相手の場のフォロワー2枚を選ぶ。それを破壊。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108409"
+  },
+  {
+    "name": "パメラの舞踏",
+    "class": "ウィッチ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114432_tafdu.webp",
+    "effect": "自分の場の土の印を+1する。自分は『クレスト：パメラの舞踏』を持つ。クレスト(1)自分のターン終了時、自分のデッキから1枚を引く。(10)自分の場のフォロワーすべては攻撃力/体力が2倍になる。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108412"
+  },
+  {
+    "name": "マナリアの剣士・オーウェン",
+    "class": "ウィッチ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114432_3e50p.webp",
+    "effect": "自分の手札すべては1回スペルブーストする。自分のデッキからフォロワー2枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108415"
+  },
+  {
+    "name": "否定の詠唱・バーゼント",
+    "class": "ウィッチ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114432_mprdj.webp",
+    "effect": "『オニオン軍団』2枚を自分の場に出す。自分は『クレスト：否定の詠唱・バーゼント』を持つ。クレスト自分のターン開始時、『オニオン軍団』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108418"
+  },
+  {
+    "name": "調香の魔術師",
+    "class": "ウィッチ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114433_y1gpl.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それに3ダメージ。自分の場の土の印を+1する。と同じ能力が働く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108421"
+  },
+  {
+    "name": "カオスフレイム",
+    "class": "ウィッチ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114433_zhvq7.webp",
+    "effect": "相手の場のフォロワーすべてにXダメージを割りふる。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108424"
+  },
+  {
+    "name": "アイスピアース",
+    "class": "ウィッチ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114432_yqd0x.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それを破壊。(1)相手のリーダーに2ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108427"
+  },
+  {
+    "name": "魔導の司書",
+    "class": "ウィッチ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114431_uahp1.webp",
+    "effect": "自分の手札1枚を選ぶ。それをデッキに戻す。自分のデッキからスペル1枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108430"
+  },
+  {
+    "name": "憧憬の魔女・メルヴィ",
+    "class": "ウィッチ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114431_69soz.webp",
+    "effect": "『魔女の錬金釜』1枚を自分の手札に加える。自分の場に超進化後のフォロワーがあるなら、自分の場の土の印を+2する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108433"
+  },
+  {
+    "name": "龍人演義・ガリュウ",
+    "class": "ドラゴン",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/180911_nxua3.webp",
+    "effect": "「覇道の金龍」1枚と「覇道の銀龍」1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934079"
+  },
+  {
+    "name": "烈火のファイアリザード",
+    "class": "ドラゴン",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/122926_a7op3.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それに1ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934361"
+  },
+  {
+    "name": "竜育の少女",
+    "class": "ドラゴン",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123029_qib53.webp",
+    "effect": "「ベビーファイアドレイク」1枚を自分の場に出す。\nファンファーレと同じ能力が働く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934364"
+  },
+  {
+    "name": "駆け出しのドラゴンスレイヤー",
+    "class": "ドラゴン",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123052_3clex.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それを破壊。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934370"
+  },
+  {
+    "name": "栄弦の天宮・リュウフウ",
+    "class": "ドラゴン",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123053_dj984.webp",
+    "effect": "覚醒なら、これは進化する。\nこれが進化したとき、自分のPP最大値を+1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934376"
+  },
+  {
+    "name": "ナイトフォールドラゴン",
+    "class": "ドラゴン",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123055_qir6v.webp",
+    "effect": "相手の場のフォロワーすべては-0/-9する。\n自分のデッキから3枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934379"
+  },
+  {
+    "name": "再臨のジェネシスドラゴン",
+    "class": "ドラゴン",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123056_eisxt.webp",
+    "effect": "",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934382"
+  },
+  {
+    "name": "ドラゴニュートクラッシュ",
+    "class": "ドラゴン",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/124042_pxqer.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それに2ダメージ。覚醒なら、2ダメージではなく4ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934529"
+  },
+  {
+    "name": "竜の啓示",
+    "class": "ドラゴン",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123050_3tf9b.webp",
+    "effect": "自分のPP最大値を+1する。その後、自分のPP最大値が10なら、自分のデッキから1枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934535"
+  },
+  {
+    "name": "栄弦の奏楽",
+    "class": "ドラゴン",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123051_s5iez.webp",
+    "effect": "自分のデッキから2枚を引く。覚醒状態なら、自分のリーダーを2回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934538"
+  },
+  {
+    "name": "ディザスターブレス",
+    "class": "ドラゴン",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123054_wrepb.webp",
+    "effect": "場のフォロワーすべてに5ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934541"
+  },
+  {
+    "name": "覇道の竜翼・フォルテ",
+    "class": "ドラゴン",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/120933_f87e0.webp",
+    "effect": "",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78985577"
+  },
+  {
+    "name": "乙姫の扇",
+    "class": "ドラゴン",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213052_z8oh4.webp",
+    "effect": "『乙姫お守り隊』1枚を自分の場に出す。自分の手札1枚を選ぶ。それを捨てる。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000184"
+  },
+  {
+    "name": "風を駆る者・エイファ",
+    "class": "ドラゴン",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213046_q6ypk.webp",
+    "effect": "なら、これはを持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000352"
+  },
+  {
+    "name": "風を読む者・ゼル",
+    "class": "ドラゴン",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213045_ct4zl.webp",
+    "effect": "自分の場の他のフォロワー1枚を選ぶ。それはを持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000355"
+  },
+  {
+    "name": "猛撃のドラゴンウォーリアー",
+    "class": "ドラゴン",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213044_pi2at.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それに4ダメージ。\n1枚を選ぶのではなくすべて。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000421"
+  },
+  {
+    "name": "白鱗の御使い",
+    "class": "ドラゴン",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213046_gkqyt.webp",
+    "effect": "なら、自分のリーダーを4回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000424"
+  },
+  {
+    "name": "艶麗なる竜人・マリオン",
+    "class": "ドラゴン",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213050_owsp5.webp",
+    "effect": "自分の場の他のフォロワー1枚を選ぶ。それは+2/+2する。なら、+2/+2ではなく+3/+3。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000427"
+  },
+  {
+    "name": "咆哮の竜使い",
+    "class": "ドラゴン",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213045_s8oc0.webp",
+    "effect": "『大翼のドラゴン』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000478"
+  },
+  {
+    "name": "海溝の大剣竜",
+    "class": "ドラゴン",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213045_8g32h.webp",
+    "effect": "なら、これはを持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000481"
+  },
+  {
+    "name": "戦斧の竜殺し",
+    "class": "ドラゴン",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213046_rk2lh.webp",
+    "effect": "",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000508"
+  },
+  {
+    "name": "煌牙の義勇・キット",
+    "class": "ドラゴン",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213046_jkhns.webp",
+    "effect": "これが捨てられたとき、自分の場のフォロワーからランダム1枚は+1/+0する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000511"
+  },
+  {
+    "name": "荒波のドラグーン・ザハール",
+    "class": "ドラゴン",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213047_grzsj.webp",
+    "effect": "『大翼のドラゴン』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000514"
+  },
+  {
+    "name": "灼熱のアナテマ・バーンドナイト",
+    "class": "ドラゴン",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213049_t5801.webp",
+    "effect": "自分の手札1枚を選ぶ。それを捨てる。相手の場のフォロワーすべてにXダメージ。Xは選んだカードのコストである。\n相手は『クレスト：灼熱のアナテマ・バーンドナイト』を持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000556"
+  },
+  {
+    "name": "シャークソルジャー",
+    "class": "ドラゴン",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213054_o98zj.webp",
+    "effect": "相手のリーダーに6ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000577"
+  },
+  {
+    "name": "雲海の騎竜兵",
+    "class": "ドラゴン",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213051_m4ukc.webp",
+    "effect": "『大翼のドラゴン』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000580"
+  },
+  {
+    "name": "絢爛なる鳳凰・ほーちゃん",
+    "class": "ドラゴン",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114859_rosv6.webp",
+    "effect": "自分のデッキすべてのコストを半分にする。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108436"
+  },
+  {
+    "name": "銀氷の竜少女・フィルレイン",
+    "class": "ドラゴン",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114859_dl6x4.webp",
+    "effect": "なら、『銀氷の吐息』1枚を自分の手札に加える。相手の場のフォロワーすべてに1ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79085837"
+  },
+  {
+    "name": "ドラゴニックストライク",
+    "class": "ドラゴン",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114900_k4qsd.webp",
+    "effect": "自分の手札1枚を選ぶ。それのコストを-2する。相手の場のフォロワーすべてに3ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108439"
+  },
+  {
+    "name": "蒼海の裁き・ネプチューン",
+    "class": "ドラゴン",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114858_fajb6.webp",
+    "effect": "クレスト",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108442"
+  },
+  {
+    "name": "炎竜の剣",
+    "class": "ドラゴン",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114900_2f4ei.webp",
+    "effect": "コスト1これを破壊。自分の場のフォロワー1枚を選ぶ。それは+1/+1して「『炎竜の剣』1枚を自分の場に出す。」を持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108445"
+  },
+  {
+    "name": "歴戦のマーマン",
+    "class": "ドラゴン",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114900_e7ozi.webp",
+    "effect": "『大海のオルカ』2枚を自分の場に出す。『大海のオルカ』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108448"
+  },
+  {
+    "name": "宿願のドラゴニュートプリンセス",
+    "class": "ドラゴン",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114858_7gu3r.webp",
+    "effect": "自分の場に超進化後のフォロワーがあるなら、自分のデッキから2枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108451"
+  },
+  {
+    "name": "オルカの呼び声",
+    "class": "ドラゴン",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114901_n2soq.webp",
+    "effect": "『大海のオルカ』1枚を自分の場に出す。なら、自分のデッキから『オルカの呼び声』1枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108454"
+  },
+  {
+    "name": "飛躍のアイボリードラゴン",
+    "class": "ドラゴン",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114859_2pn36.webp",
+    "effect": "なら、自分のデッキから1枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108457"
+  },
+  {
+    "name": "庇護の知竜",
+    "class": "ドラゴン",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/114901_ji4e0.webp",
+    "effect": "手札で働く。自分のフォロワーが超進化したとき、これのコストを-3する。『大翼のドラゴン』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108460"
+  },
+  {
+    "name": "奔放なる獄炎・ケルベロス",
+    "class": "ナイトメア",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/180911_j3cds.webp",
+    "effect": "「番犬の右腕・ミミ」1枚と「番犬の左腕・ココ」1枚を自分の場に出す。\n自分の場のフォロワーすべては+2/+0する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934091"
+  },
+  {
+    "name": "悪辣のレッサーマミー",
+    "class": "ナイトメア",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123057_nm97v.webp",
+    "effect": "(4)これはを持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934544"
+  },
+  {
+    "name": "辣腕の死神・ミーノ",
+    "class": "ナイトメア",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123058_8bvex.webp",
+    "effect": "「スケルトン」1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934547"
+  },
+  {
+    "name": "燃え盛る魔剣・オルトロス",
+    "class": "ナイトメア",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123059_ak3t5.webp",
+    "effect": "自分の墓場を+2する。\n「相手の場のフォロワーからランダム1枚に2ダメージ。」を2回行う。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934550"
+  },
+  {
+    "name": "ボーンガール",
+    "class": "ナイトメア",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123100_ywcfl.webp",
+    "effect": "「スケルトン」2枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934556"
+  },
+  {
+    "name": "青薔薇の令嬢・セレス",
+    "class": "ナイトメア",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123102_cazex.webp",
+    "effect": "自分のターン終了時、自分のリーダーを2回復。これが超進化後なら、2回復ではなく4回復。これはを持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934562"
+  },
+  {
+    "name": "瞑地の天宮・ムカン",
+    "class": "ナイトメア",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123103_acbqk.webp",
+    "effect": "これは進化する。\nこれが進化したとき、『ゴースト』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934601"
+  },
+  {
+    "name": "ジャグリングゴースト",
+    "class": "ナイトメア",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123103_14tvq.webp",
+    "effect": "(4)を行う。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935327"
+  },
+  {
+    "name": "串刺し公・ヴラド",
+    "class": "ナイトメア",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123104_7migf.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それに5ダメージ。自分のリーダーを5回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935330"
+  },
+  {
+    "name": "死神の一振り",
+    "class": "ナイトメア",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123056_umvx0.webp",
+    "effect": "自分の場のフォロワー1枚と相手の場のフォロワー1枚を選ぶ。それを破壊。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935333"
+  },
+  {
+    "name": "暝地の霊園",
+    "class": "ナイトメア",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123101_w697e.webp",
+    "effect": "自分の墓場を+2する。\nこれを破壊。『ゴースト』2枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935336"
+  },
+  {
+    "name": "猛毒姫・メドゥーサ",
+    "class": "ナイトメア",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/120934_idyeu.webp",
+    "effect": "1ターンに3回攻撃できる。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78985583"
+  },
+  {
+    "name": "魅惑のサキュバス・リリム",
+    "class": "ナイトメア",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214303_z8pax.webp",
+    "effect": "『バット』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000187"
+  },
+  {
+    "name": "蛇神の怒り",
+    "class": "ナイトメア",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213051_erg14.webp",
+    "effect": "相手の場のフォロワー1枚か相手のリーダーを選ぶ。それに3ダメージ。自分のリーダーに2ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000256"
+  },
+  {
+    "name": "無名の悪魔",
+    "class": "ナイトメア",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213045_t1bjq.webp",
+    "effect": "『バット』2枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000259"
+  },
+  {
+    "name": "ナイトメア・ヴェリィ",
+    "class": "ナイトメア",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213053_mwk95.webp",
+    "effect": "自分のリーダーに3ダメージ。自分のリーダーを5回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000262"
+  },
+  {
+    "name": "カオティックカース",
+    "class": "ナイトメア",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213051_d5zbl.webp",
+    "effect": "（1）自分のデッキからフォロワー1枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000265"
+  },
+  {
+    "name": "魂の捕食",
+    "class": "ナイトメア",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213047_oiwra.webp",
+    "effect": "自分の場のフォロワー1枚を選ぶ。それを破壊。自分のデッキから2枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000268"
+  },
+  {
+    "name": "夜の鬼人",
+    "class": "ナイトメア",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213048_szdpg.webp",
+    "effect": "自分のリーダーに1ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000358"
+  },
+  {
+    "name": "ミッドナイトヴァンパイア・エラル",
+    "class": "ナイトメア",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/213052_gax8y.webp",
+    "effect": "『バット』1枚を自分の場に出す。自分の『バット』が場に出たとき、それはを持つ。自分のリーダーに1ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000361"
+  },
+  {
+    "name": "闇の賞金稼ぎ・バルト",
+    "class": "ナイトメア",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214306_z2uiv.webp",
+    "effect": "自分のターン終了時、リーダーすべてに1ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000364"
+  },
+  {
+    "name": "ラバーズネクロマンサー",
+    "class": "ナイトメア",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214301_78bft.webp",
+    "effect": "『ゴースト』2枚を自分の場に出す。それはを持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000430"
+  },
+  {
+    "name": "怪奇の探索者・ユナ",
+    "class": "ナイトメア",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214304_yoauc.webp",
+    "effect": "『ゴースト』1枚と『バット』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000433"
+  },
+  {
+    "name": "禁約の悪魔",
+    "class": "ナイトメア",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214304_izga2.webp",
+    "effect": "自分のデッキから2枚を引く。自分のリーダーに2ダメージ。相手の場のフォロワー1枚を選ぶ。それに6ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000484"
+  },
+  {
+    "name": "エンドレスハンター・アラガヴィ",
+    "class": "ナイトメア",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214305_xuavq.webp",
+    "effect": "相手の場のフォロワーすべてに7ダメージを割りふる。リーダーすべてに3ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000487"
+  },
+  {
+    "name": "ウルフマスター",
+    "class": "ナイトメア",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214301_460pg.webp",
+    "effect": "",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000517"
+  },
+  {
+    "name": "流れ堕つ冥河・カローン",
+    "class": "ナイトメア",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115530_ev75d.webp",
+    "effect": "自分は『クレスト：流れ堕つ冥河・カローン』を持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108463"
+  },
+  {
+    "name": "双輪夜行・ギンセツ＆ユヅキ",
+    "class": "ナイトメア",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115530_czusw.webp",
+    "effect": "（1）『一ツ尾狐』4枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79085027"
+  },
+  {
+    "name": "ノクターンジェネラル・エクセラ",
+    "class": "ナイトメア",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115529_ds9o2.webp",
+    "effect": "これは+X/+0する。Xは自分の場の他のフォロワーの枚数である。自分のリーダーに2ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108466"
+  },
+  {
+    "name": "クルーエルウォー・ラウラ",
+    "class": "ナイトメア",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115529_4nxzm.webp",
+    "effect": "自分の場の他のフォロワー1枚を選ぶ。それはを持つ。自分の場の他のフォロワー1枚を選ぶ。それはを持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108469"
+  },
+  {
+    "name": "蝙蝠の使役",
+    "class": "ナイトメア",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115646_vtzax.webp",
+    "effect": "『バット』2枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108472"
+  },
+  {
+    "name": "コープスソルジャー",
+    "class": "ナイトメア",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115530_3wokz.webp",
+    "effect": "『腐臭のゾンビ』2枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108475"
+  },
+  {
+    "name": "ブラストウィング・ピユラ",
+    "class": "ナイトメア",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115529_k97pm.webp",
+    "effect": "自分の他のフォロワーが超進化したとき、それとこれは+2/+0する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108478"
+  },
+  {
+    "name": "カースパーティー",
+    "class": "ナイトメア",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115529_pebz4.webp",
+    "effect": "『ゴースト』1枚と『スケルトン』1枚と『腐臭のゾンビ』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108481"
+  },
+  {
+    "name": "怨恨の栽培者",
+    "class": "ナイトメア",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115531_epibu.webp",
+    "effect": "『ゴースト』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108484"
+  },
+  {
+    "name": "シルバーバレット・レイヴン",
+    "class": "ナイトメア",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115531_dgnla.webp",
+    "effect": "相手の場のフォロワー2枚を選ぶ。それを破壊。自分のリーダーに2ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108487"
+  },
+  {
+    "name": "水の守護神・サレファ",
+    "class": "ビショップ",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/151916_oc5sz.webp",
+    "effect": "自分のリーダーを3回復。\n相手の場のフォロワーすべてに3ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935555"
+  },
+  {
+    "name": "大いなる熾天使・ラピス",
+    "class": "ビショップ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/151920_j2p8v.webp",
+    "effect": "自分は「クレスト：大いなる熾天使・ラピス」を持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935558"
+  },
+  {
+    "name": "穏やかなる教会",
+    "class": "ビショップ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/151927_qz4f2.webp",
+    "effect": "自分のデッキから2枚を引く。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935561"
+  },
+  {
+    "name": "純白の聖女・ジャンヌ",
+    "class": "ビショップ",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/120935_atfv5.webp",
+    "effect": "相手の場のフォロワーすべてに6ダメージ。自分の場の他のフォロワーすべては+2/+4する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78985586"
+  },
+  {
+    "name": "有翼の石像",
+    "class": "ビショップ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214302_xzsoj.webp",
+    "effect": "『ホーリーファルコン』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000190"
+  },
+  {
+    "name": "清純なる白狐",
+    "class": "ビショップ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214304_wh9ui.webp",
+    "effect": "",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000253"
+  },
+  {
+    "name": "煌槍のアルミラージ・サリッサ",
+    "class": "ビショップ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214302_3oq8b.webp",
+    "effect": "自分のを持つフォロワーが破壊されたとき、これは+1/+1する。これはを持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000271"
+  },
+  {
+    "name": "潜みしマイニュ",
+    "class": "ビショップ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214305_ag8zy.webp",
+    "effect": "自分がアミュレットをしたとき、ターン終了まで、これは+1/+0する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000274"
+  },
+  {
+    "name": "禁密の聖地",
+    "class": "ビショップ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214308_xe03y.webp",
+    "effect": "自分の場のフォロワー1枚を選ぶ。それは+1/+1する。自分のリーダーを1回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000277"
+  },
+  {
+    "name": "獣姫の誓約",
+    "class": "ビショップ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214304_dprkm.webp",
+    "effect": "『ホーリーフレイムタイガー』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000289"
+  },
+  {
+    "name": "聖心のプリズムプリースト",
+    "class": "ビショップ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214306_ihzjy.webp",
+    "effect": "自分のデッキからアミュレット1枚を引く。\n自分の手札のアミュレット1枚を選ぶ。それのコストを-1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000367"
+  },
+  {
+    "name": "セイントシールダー",
+    "class": "ビショップ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214304_dkf8h.webp",
+    "effect": "",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000370"
+  },
+  {
+    "name": "セイクリッドインジェクション",
+    "class": "ビショップ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214307_xe8p3.webp",
+    "effect": "これを破壊。相手の場のフォロワー1枚を選ぶ。それに4ダメージ。自分のリーダーを1回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000373"
+  },
+  {
+    "name": "ウィングウォーリアー",
+    "class": "ビショップ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214307_3kzvc.webp",
+    "effect": "自分の場の他のフォロワー1枚を選ぶ。それは+1/+1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000436"
+  },
+  {
+    "name": "鉄拳の神父",
+    "class": "ビショップ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214301_kx5v3.webp",
+    "effect": "相手の場の体力3以下のフォロワー1枚を選ぶ。それを消滅。\n1枚を選ぶのではなくすべて。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000439"
+  },
+  {
+    "name": "煌翼のフェザーフォルク・リノ",
+    "class": "ビショップ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214306_vjn3r.webp",
+    "effect": "相手のリーダーに1ダメージ。\nこれは「1ターンに2回攻撃できる。」を持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000442"
+  },
+  {
+    "name": "禁密の天宮・ロナヴェロ",
+    "class": "ビショップ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214306_o2w7t.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それを破壊。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000445"
+  },
+  {
+    "name": "投影の鳥像",
+    "class": "ビショップ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214306_t9z0k.webp",
+    "effect": "『壮麗なる隼』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000448"
+  },
+  {
+    "name": "標を与えるレディアンスエンジェル",
+    "class": "ビショップ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214302_28phs.webp",
+    "effect": "自分のデッキから2枚を引く。自分のリーダーを2回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000490"
+  },
+  {
+    "name": "癒しのシスター",
+    "class": "ビショップ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214300_qmu8v.webp",
+    "effect": "自分のリーダーを5回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000520"
+  },
+  {
+    "name": "終焉のスカルフェイン",
+    "class": "ビショップ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214305_bzcwq.webp",
+    "effect": "自分の場のアミュレットすべてを破壊。相手の場のフォロワーすべてと相手のリーダーにXダメージ。Xはこれで破壊した枚数である。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000523"
+  },
+  {
+    "name": "フェザーレイン",
+    "class": "ビショップ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214305_9rh3x.webp",
+    "effect": "相手の場のフォロワーすべてに3ダメージ。『ホーリーファルコン』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000526"
+  },
+  {
+    "name": "邪教の器",
+    "class": "ビショップ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214308_5wj3z.webp",
+    "effect": "これを破壊。場のフォロワーすべてを破壊。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000529"
+  },
+  {
+    "name": "大地の守護神・ミーヴェ",
+    "class": "ビショップ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214303_k3p5v.webp",
+    "effect": "このバトル中に破壊された自分の元のコスト最大のアミュレットからランダム1枚と同名のカード1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000559"
+  },
+  {
+    "name": "裁決のアナテマ・ロデオ",
+    "class": "ビショップ",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214308_r43fa.webp",
+    "effect": "自分の手札1枚を選ぶ。それを捨てる。自分のデッキのコスト3以下のアミュレットからランダム3種類を自分の場に出す。\n相手の場の攻撃力最大のフォロワーからランダム1枚を破壊。相手の場のフォロワーすべてに1ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000562"
+  },
+  {
+    "name": "セイクリッドグリフォン",
+    "class": "ビショップ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214302_89p3z.webp",
+    "effect": "自分がアミュレットをしたとき、これはを持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000583"
+  },
+  {
+    "name": "嗚咽の聖騎士・ウィルバート",
+    "class": "ビショップ",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115954_p3rh5.webp",
+    "effect": "『聖騎兵』2枚を自分の場に出す。\n自分は『クレスト：嗚咽の聖騎士・ウィルバート』を持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108490"
+  },
+  {
+    "name": "天の守護神・アイテール",
+    "class": "ビショップ",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115953_oi60p.webp",
+    "effect": "自分のデッキのコスト3以下のフォロワーからランダム3種類を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108493"
+  },
+  {
+    "name": "狂おしき恩寵",
+    "class": "ビショップ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115953_j6wtc.webp",
+    "effect": "自分のリーダーに10ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108496"
+  },
+  {
+    "name": "速断の刃・アニエス",
+    "class": "ビショップ",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115953_xjyen.webp",
+    "effect": "自分の場のアミュレットの枚数が2以上なら、相手の場の交戦相手でないフォロワーからランダム1枚を破壊。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108499"
+  },
+  {
+    "name": "ディバインガード",
+    "class": "ビショップ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115952_x5fg1.webp",
+    "effect": "自分の場のを持つフォロワー1枚を選ぶ。それは+0/+1する。相手の場のフォロワーからランダム1枚にXダメージ。Xは選んだフォロワーの体力である。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108502"
+  },
+  {
+    "name": "潔癖の審判者",
+    "class": "ビショップ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115953_i1lnd.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それを消滅。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108505"
+  },
+  {
+    "name": "バラージエクソシスト・コレット",
+    "class": "ビショップ",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115952_5ogsi.webp",
+    "effect": "「相手の場のフォロワーからランダム1枚に2ダメージ。」を1回行う。自分の場のアミュレットの枚数が2以上なら、1回ではなく2回。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108508"
+  },
+  {
+    "name": "光の香炉",
+    "class": "ビショップ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115953_itpmq.webp",
+    "effect": "コスト1これを破壊。自分のリーダーを4回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108511"
+  },
+  {
+    "name": "マリスオラクル・ダムス",
+    "class": "ビショップ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115952_2kz1l.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それは「自分のターン終了時、これを破壊。」を持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108514"
+  },
+  {
+    "name": "粉砕の聖職者",
+    "class": "ビショップ",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/115954_o14t7.webp",
+    "effect": "相手の場の超進化後のフォロワー1枚を選ぶ。それを破壊。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108517"
+  },
+  {
+    "name": "プロシードハート・オーキス",
+    "class": "ネメシス",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/180912_41nae.webp",
+    "effect": "「ロイド」1枚を自分の場に出す。\n「改良型・操り人形」2枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78934100"
+  },
+  {
+    "name": "マリオネットランサー",
+    "class": "ネメシス",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123106_6raol.webp",
+    "effect": "「改良型・操り人形」1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935339"
+  },
+  {
+    "name": "愛執のドールユーザー",
+    "class": "ネメシス",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123107_bl9z0.webp",
+    "effect": "「操り人形」1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935342"
+  },
+  {
+    "name": "オートマタアサシン",
+    "class": "ネメシス",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123109_t7vfz.webp",
+    "effect": "「改良型・操り人形」1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935348"
+  },
+  {
+    "name": "魔鋼の騎兵",
+    "class": "ネメシス",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123111_ycxpt.webp",
+    "effect": "「魔鋼の騎兵」1枚を自分の場に出す。\n1枚ではなく2枚。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935351"
+  },
+  {
+    "name": "殺意の糸・ノア",
+    "class": "ネメシス",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123111_drf69.webp",
+    "effect": "「操り人形」3枚を自分の手札に加える。自分の手札の人形・フォロワーすべては+1/+0する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935354"
+  },
+  {
+    "name": "狂気の創造者・リーアム",
+    "class": "ネメシス",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123112_pmq0k.webp",
+    "effect": "「改良型・操り人形」3枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935357"
+  },
+  {
+    "name": "人形の身代わり",
+    "class": "ネメシス",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123110_nkb7h.webp",
+    "effect": "「改良型・操り人形」2枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935531"
+  },
+  {
+    "name": "ドールズシアター",
+    "class": "ネメシス",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/03/123108_o1sae.webp",
+    "effect": "「操り人形」1枚を自分の手札に加える。\n自分のターン終了時、「操り人形」1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78935534"
+  },
+  {
+    "name": "新たなる少女・エース",
+    "class": "ネメシス",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/120932_dwbcu.webp",
+    "effect": "自分は「クレスト：新たなる少女・エース」を持つ\n自分のターン終了時、自分の手札の枚数が5以下なら、自分のデッキから1枚を引く。6以上なら、自分のリーダーを1回復。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78985580"
+  },
+  {
+    "name": "アーティファクトチャージ",
+    "class": "ネメシス",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/120936_dg0a4.webp",
+    "effect": "「フューチャー・コア」1枚と「パスト・コア」1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78985613"
+  },
+  {
+    "name": "改境の再動",
+    "class": "ネメシス",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/120935_hf2o5.webp",
+    "effect": "自分の手札のコスト5以下のアーティファクト・フォロワー2枚を選ぶ。それのコピー1枚を自分の場に出す。それは「相手のターン終了時、これを破壊。」を持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/78985616"
+  },
+  {
+    "name": "ビビッドインベンター・イリス",
+    "class": "ネメシス",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214308_8d0ho.webp",
+    "effect": "『パスト・コア』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000196"
+  },
+  {
+    "name": "エレクトロウィッパー",
+    "class": "ネメシス",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214302_8ixwy.webp",
+    "effect": "『パスト・コア』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000280"
+  },
+  {
+    "name": "アンストッパブルガンナー",
+    "class": "ネメシス",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214300_0xtkc.webp",
+    "effect": "『フューチャー・コア』1枚を自分の手札に加える。\n相手の場のフォロワー1枚を選ぶ。それに3ダメージ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000283"
+  },
+  {
+    "name": "命の奔流",
+    "class": "ネメシス",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214303_fs31o.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それに3ダメージ。『パスト・コア』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000286"
+  },
+  {
+    "name": "砲撃の猫獣人",
+    "class": "ネメシス",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214303_jc1nk.webp",
+    "effect": "『フューチャー・コア』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000376"
+  },
+  {
+    "name": "レゾリューション・ミリアム",
+    "class": "ネメシス",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214303_dhyzr.webp",
+    "effect": "『フューチャー・コア』1枚と『パスト・コア』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000379"
+  },
+  {
+    "name": "ストラグルリーダー・ルキナ",
+    "class": "ネメシス",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214307_ohxe5.webp",
+    "effect": "『フューチャー・コア』1枚と『パスト・コア』1枚を自分の手札に加える。\n『アタックアーティファクト』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000451"
+  },
+  {
+    "name": "異次元からの銃撃",
+    "class": "ネメシス",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214308_nq2lm.webp",
+    "effect": "相手の場のフォロワー1枚を選ぶ。それを破壊。『フューチャー・コア』1枚と『パスト・コア』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000454"
+  },
+  {
+    "name": "メタルマーセナリー・ディルク",
+    "class": "ネメシス",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214307_lv0g7.webp",
+    "effect": "『キャッスルアーティファクト』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000493"
+  },
+  {
+    "name": "改境の天宮・アルエット",
+    "class": "ネメシス",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214301_1ambu.webp",
+    "effect": "『フューチャー・コア』1枚と『パスト・コア』1枚を自分の手札に加える。\n自分の手札のコスト5以下のアーティファクト・フォロワー1枚を選ぶ。それのコピー1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000496"
+  },
+  {
+    "name": "遺産の砲撃",
+    "class": "ネメシス",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214308_1f26t.webp",
+    "effect": "『フューチャー・コア』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000499"
+  },
+  {
+    "name": "獣性の鉄人",
+    "class": "ネメシス",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214305_hbeno.webp",
+    "effect": "",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000532"
+  },
+  {
+    "name": "箱庭の断罪者・シルヴィア",
+    "class": "ネメシス",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214301_nl1wk.webp",
+    "effect": "1つを選んでその能力が働く。\n相手の場のフォロワー1枚を選ぶ。それを破壊。\n1枚ではなく2枚。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000535"
+  },
+  {
+    "name": "ブーストエクステンド・ララミア",
+    "class": "ネメシス",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/06/214307_ugncs.webp",
+    "effect": "自分の手札のコスト5以下のアーティファクト・フォロワー3枚を選ぶ。それのコピー1枚を自分の場に出す。\n自分の場のアーティファクト・フォロワーすべては+1/+1する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79000586"
+  },
+  {
+    "name": "シンフォニアハート・ツヴァイ",
+    "class": "ネメシス",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120423_76d18.webp",
+    "effect": "『ヴィクトリア』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108520"
+  },
+  {
+    "name": "マインドアーツ・カルラ",
+    "class": "ネメシス",
+    "rarity": "レジェンド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120423_s3lim.webp",
+    "effect": "自分の手札のコスト5以下のアーティファクト・フォロワー1枚を選ぶ。それのコピー1枚を自分の場に出す。\nこれは「1ターンに2回攻撃できる。」を持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108523"
+  },
+  {
+    "name": "暗獄の残光・ジャスパー",
+    "class": "ネメシス",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120422_h659x.webp",
+    "effect": "『パスト・コア』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108526"
+  },
+  {
+    "name": "心有る共闘",
+    "class": "ネメシス",
+    "rarity": "ゴールド",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120422_jqr5p.webp",
+    "effect": "『ロイド』1枚と『ヴィクトリア』1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108529"
+  },
+  {
+    "name": "ハートスローター・フィア",
+    "class": "ネメシス",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120423_uby7q.webp",
+    "effect": "自分の手札の人形・フォロワー1枚を選ぶ。それは『ドールスローター』に変身する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108532"
+  },
+  {
+    "name": "ディスペアロード・アキム",
+    "class": "ネメシス",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120423_1mzgs.webp",
+    "effect": "相手の場の攻撃力4以下のフォロワー1枚を選ぶ。それを消滅して、コピー1枚を自分の場に出す。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108535"
+  },
+  {
+    "name": "イカロスの飛翔",
+    "class": "ネメシス",
+    "rarity": "シルバー",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120422_rpiqe.webp",
+    "effect": "自分の手札のアーティファクト・フォロワー1枚を選ぶ。それはと「自分のデッキから1枚を引く。」を持つ。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108538"
+  },
+  {
+    "name": "エンジンブレイダー",
+    "class": "ネメシス",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120422_x9kwa.webp",
+    "effect": "『アタックアーティファクト』1枚を自分の場に出す。『パスト・コア』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108541"
+  },
+  {
+    "name": "パペットキャット",
+    "class": "ネメシス",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120423_a7e8s.webp",
+    "effect": "自分の場に超進化後のフォロワーがあるなら、『操り人形』1枚を自分の手札に加える。それは+3/+0する。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108544"
+  },
+  {
+    "name": "アーティファクトカタパルト",
+    "class": "ネメシス",
+    "rarity": "ブロンズ",
+    "img": "https://appmedia.jp/wp-content/uploads/2025/07/120422_i60rp.webp",
+    "effect": "『フューチャー・コア』1枚を自分の手札に加える。",
+    "detailUrl": "https://appmedia.jp/shadowverse-wb/79108547"
+  }
+]

@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1200" />
+<title>2Pick 模倣サイト</title>
+<style>
+  :root{
+    --bg:#0b0f14; --panel:#141a22; --panel2:#1b2330; --accent:#2eaadf; --text:#e8f0fb;
+    --muted:#9bb0c6; --gold:#d9a441; --legend:#a25bff; --silver:#bfc9d6; --bronze:#cd9964;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(180deg,#0b0f14,#101821 60%);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,'Hiragino Kaku Gothic ProN','Meiryo',sans-serif;}
+  header{padding:18px 22px;border-bottom:1px solid #243041;background:#0f1620;position:sticky;top:0;z-index:50}
+  header h1{margin:0;font-size:20px;letter-spacing:.5px}
+  main{max-width:1200px;margin:24px auto;padding:0 16px 40px}
+  .grid{display:grid;gap:18px}
+  .grid.cols-4{grid-template-columns:repeat(4,1fr)}
+  .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+  .panel{background:linear-gradient(180deg,var(--panel),#0e1520);border:1px solid #26364b;border-radius:16px;padding:16px}
+  .title{font-size:18px;font-weight:800;margin:0 0 12px;letter-spacing:.5px}
+  .sub{color:var(--muted);font-size:13px;margin-top:-6px;margin-bottom:10px}
+  .class-pill{display:inline-block;padding:3px 10px;border:1px solid #2f455e;border-radius:999px;font-size:12px;color:#c9d7e8;margin-left:8px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px;background:linear-gradient(180deg,#1e2b3d,#1a2533);border:1px solid #2b3b53;border-radius:12px;color:#eaf4ff;font-weight:700;cursor:pointer;user-select:none}
+  .btn:hover{filter:brightness(1.06)}
+  .btn:disabled{opacity:.5;cursor:not-allowed}
+  .footerbar{display:flex;align-items:center;justify-content:space-between;margin-top:14px}
+  .flex{display:flex;gap:12px;align-items:center}
+
+  /* ===== カード ===== */
+  .card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid #2a394b;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.35);overflow:hidden;display:flex;flex-direction:column;min-height:260px}
+  .card .thumb{position:relative;height:220px;background:#0e141c;display:flex;align-items:center;justify-content:center}
+  .card .thumb img{max-height:100%;max-width:100%;object-fit:contain;display:block;filter:drop-shadow(0 6px 16px rgba(0,0,0,.6))}
+  .badge{position:absolute;left:10px;top:10px;padding:4px 8px;border-radius:999px;font-size:12px;font-weight:700;background:#223040;border:1px solid #2f455e;color:var(--muted)}
+  .badge.legend{background:rgba(162,91,255,.18);border-color:#7b55f7;color:#cbb5ff}
+  .badge.gold{background:rgba(217,164,65,.15);border-color:#d9a441;color:#ffd88d}
+  .badge.silver{background:rgba(191,201,214,.12);border-color:#bfc9d6;color:#e6edf5}
+  .badge.bronze{background:rgba(205,153,100,.12);border-color:#cd9964;color:#f1d6bf}
+  .body{padding:12px 14px 14px}
+  .name{font-size:15px;font-weight:700;line-height:1.35;margin-bottom:6px}
+  .effect{font-size:13px;color:var(--muted);line-height:1.5;max-height:5.5em;overflow:auto;white-space:pre-wrap}
+  .detail-link{margin-top:8px;display:block;font-size:12px;color:#78c6f3;text-decoration:none;word-break:break-all}
+  .detail-link:hover{text-decoration:underline}
+
+  /* ミニカード */
+  .deck{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+  .mini{border:1px solid #2b3b53;border-radius:10px;padding:6px;background:#0f1520}
+  .mini img{width:100%;height:96px;object-fit:cover;border-radius:6px}
+  .mini .t{font-size:11px;margin-top:4px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .legendary{color:#cbb5ff}.goldy{color:#ffd88d}.silvery{color:#e6edf5}.bronzy{color:#f1d6bf}
+
+  /* ピック周り */
+  .pickbox{display:grid;grid-template-columns:1fr 40px 1fr;gap:12px;align-items:center}
+  .vs{color:#5fa7d7;text-align:center;font-weight:800;font-size:18px}
+  .hint{font-size:12px;color:#9bb0c6}
+</style>
+</head>
+<body>
+<header><h1>2Pick 模倣サイト <span id="phaseLabel" style="font-weight:600;color:#9bb0c6"></span></h1></header>
+<main id="app">
+  <div id="loading" class="panel"><div class="title">読み込み中…</div><div class="sub">cards.json を読み込んでいます</div></div>
+</main>
+
+<script>
+/* ====== ユーティリティ ====== */
+const CLASSES = ['エルフ','ロイヤル','ウィッチ','ドラゴン','ナイトメア','ビショップ','ネメシス']; // ニュートラルは初期提示に含めない
+const ALL_CLASSES = ['ニュートラル',...CLASSES];
+const RARITIES = ['ブロンズ','シルバー','ゴールド','レジェンド'];
+const rarityClass = r => ({'レジェンド':'legend','ゴールド':'gold','シルバー':'silver','ブロンズ':'bronze'}[r]||'');
+const $ = sel => document.querySelector(sel);
+const app = $('#app'), phaseLabel = $('#phaseLabel');
+
+/* ====== 状態 ====== */
+let CARDS = [];                 // 全カード
+let POOLS = {};                 // クラス別プール + ニュートラル
+let state = {
+  phase: 'class',               // 'class' | 'pick'
+  selectedClass: null,
+  deck: [],
+  pickIndex: 1,
+  rerollsLeft: 2,
+};
+
+/* ====== ピック設定 ====== */
+const PICK_SCHEDULE = {
+  1:'ブロンズ',2:'シルバー',3:'ブロンズ',4:'シルバー',5:'ブロンズ',6:'ゴールド',7:'ブロンズ',
+  8:'シルバー',9:'ブロンズ',10:'シルバー',11:'ブロンズ',12:'シルバー',13:'ブロンズ',
+  // 14 は特例（LL または LG）
+};
+const NEUTRAL_RATE = 0.15;      // ニュートラル混入率（低め）
+const getRand = n => Math.floor(Math.random()*n);
+const choice = arr => arr[getRand(arr.length)];
+const shuffle = arr => arr.sort(()=>Math.random()-0.5);
+
+/* ——— 低確率“上振れ”ロジック（再抽選時のみ） ——— */
+function maybeUpgrade(rarity){
+  const roll = Math.random();
+  if (rarity==='ブロンズ') return (roll<0.20)?'シルバー':'ブロンズ';
+  if (rarity==='シルバー') return (roll<0.20)?'ゴールド':'シルバー';
+  if (rarity==='ゴールド') return (roll<0.10)?'レジェンド':'ゴールド';
+  return rarity;
+}
+
+/* ====== データ読み込み ====== */
+async function load(){
+  const res = await fetch('cards.json');
+  CARDS = await res.json();
+
+  // クラス別プールを構築
+  POOLS['ニュートラル'] = CARDS.filter(c=>c.class==='ニュートラル');
+  for(const cls of CLASSES){
+    POOLS[cls] = CARDS.filter(c=>c.class===cls);
+  }
+}
+
+/* ====== 初期提示：各クラスに LL or LG の2枚セットを生成（ニュートラル禁止） ====== */
+function makeInitialPair(cls){
+  const poolL = POOLS[cls].filter(c=>c.rarity==='レジェンド');
+  const poolG = POOLS[cls].filter(c=>c.rarity==='ゴールド');
+  const pattern = Math.random()<0.5 ? 'LL' : 'LG';
+  const a = choice(poolL);
+  const b = (pattern==='LL') ? choice(poolL.filter(x=>x!==a)) : choice(poolG);
+  return [a,b];
+}
+
+/* ====== ピック用：指定レアの2枚組を生成（ニュートラル低確率混入） ====== */
+function pickTwoOfRarity(cls, rarity){
+  // クラス本体プール
+  let pool = POOLS[cls].filter(c=>c.rarity===rarity);
+  // ニュートラル混入（低確率）
+  if (Math.random() < NEUTRAL_RATE) {
+    const add = POOLS['ニュートラル'].filter(c=>c.rarity===rarity);
+    pool = pool.concat(add);
+  }
+  pool = shuffle([...new Set(pool)]);
+  const a = pool[0];
+  const b = pool.find(x=>x!==a) || pool[1] || a;
+  return [a,b].filter(Boolean);
+}
+
+/* ====== ピック#14：各2枚組が LL or LG のみ ====== */
+function pickFinalPairs(cls){
+  const pair = ()=> {
+    const poolL = [...POOLS[cls].filter(c=>c.rarity==='レジェンド')];
+    const poolG = [...POOLS[cls].filter(c=>c.rarity==='ゴールド')];
+    // ニュートラルも低確率混入
+    if (Math.random()<NEUTRAL_RATE){ poolL.push(...POOLS['ニュートラル'].filter(c=>c.rarity==='レジェンド')); }
+    if (Math.random()<NEUTRAL_RATE){ poolG.push(...POOLS['ニュートラル'].filter(c=>c.rarity==='ゴールド')); }
+    const pattern = Math.random()<0.5 ? 'LL' : 'LG';
+    const a = choice(poolL);
+    const b = (pattern==='LL') ? choice(poolL.filter(x=>x!==a)) : choice(poolG);
+    return [a,b];
+  };
+  return [pair(), pair()];
+}
+
+/* ====== UI描画 ====== */
+function badgeHTML(r){
+  return `<span class="badge ${rarityClass(r)}">${r}</span>`;
+}
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+}
+function cardHTML(c){
+  const detail = c.detailUrl ? `<a class="detail-link" href="${c.detailUrl}" target="_blank" rel="noopener">${c.detailUrl}</a>` : '';
+  return `
+  <div class="card">
+    <div class="thumb">
+      <img src="${c.img}" alt="${escapeHtml(c.name)}">
+      ${badgeHTML(c.rarity)}
+    </div>
+    <div class="body">
+      <div class="name">${escapeHtml(c.name)}</div>
+      <div class="effect">${c.effect ? escapeHtml(c.effect) : '（効果テキスト未登録）'}</div>
+      ${detail}
+    </div>
+  </div>`;
+}
+function pairHTML(a,b){ return `<div class="grid cols-2">${cardHTML(a)}${cardHTML(b)}</div>`; }
+
+function renderClassSelect(){
+  state.phase = 'class';
+  phaseLabel.textContent = '— クラス選択（初期提示：LL または LG）';
+  const grids = CLASSES.map(cls=>{
+    const [a,b] = makeInitialPair(cls);
+    return `
+      <div class="panel">
+        <div class="title">${cls} <span class="class-pill">LL / LG から抽選</span></div>
+        ${pairHTML(a,b)}
+        <div class="footerbar">
+          <div class="hint">※ ニュートラルは初期提示に含めません</div>
+          <button class="btn" onclick="startPick('${cls}')">このクラスで開始</button>
+        </div>
+      </div>`;
+  }).join('');
+
+  app.innerHTML = `<div class="grid cols-2" style="grid-template-columns:repeat(2,1fr);gap:18px">${grids}</div>`;
+}
+
+/* ——— ピック —— */
+const PICK_SCHEDULE_MAP = {
+  1:'ブロンズ',2:'シルバー',3:'ブロンズ',4:'シルバー',5:'ブロンズ',6:'ゴールド',7:'ブロンズ',
+  8:'シルバー',9:'ブロンズ',10:'シルバー',11:'ブロンズ',12:'シルバー',13:'ブロンズ'
+};
+function rarityForPick(i, forReroll=false){
+  if (i===14) return null; // 特例
+  const base = PICK_SCHEDULE_MAP[i];
+  return forReroll ? maybeUpgrade(base) : base;
+}
+function makeTwoOptions(cls, i, forReroll=false){
+  if (i===14) return pickFinalPairs(cls);
+  const r = rarityForPick(i, forReroll);
+  const left = pickTwoOfRarity(cls, r);
+  const right = pickTwoOfRarity(cls, r);
+  return [left,right];
+}
+
+let currentOptions = null; // [[a,b],[c,d]]
+
+function renderPick(){
+  state.phase = 'pick';
+  phaseLabel.textContent = `— 2Pick中：${state.selectedClass} / ${state.pickIndex} / 14`;
+  const i = state.pickIndex;
+
+  if (!currentOptions) currentOptions = makeTwoOptions(state.selectedClass, i, false);
+  const [L,R] = currentOptions;
+
+  const rLabel = (i===14) ? '最終：LL or LG' : `提示レア：${PICK_SCHEDULE_MAP[i]}`;
+  const deckCount = state.deck.length;
+
+  app.innerHTML = `
+  <div class="grid cols-3" style="grid-template-columns:1fr 430px 1fr">
+    <div class="panel">
+      <div class="title">選択肢 A</div>
+      ${pairHTML(L[0],L[1])}
+      <div class="footerbar">
+        <div class="hint">${rLabel}</div>
+        <button class="btn" onclick="choosePair(0)">A を選ぶ</button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="title">現在の状況</div>
+      <div class="sub">クラス：<b>${state.selectedClass}</b>　/　ピック：<b>${i} / 14</b></div>
+      <div class="sub">所持カード：<b>${deckCount}</b>枚（AかBから2枚ずつ加算）</div>
+      <div class="sub">再抽選 残り：<b>${state.rerollsLeft}</b> 回</div>
+      <div class="footerbar">
+        <button class="btn" onclick="doReroll()" ${state.rerollsLeft<=0 ? 'disabled':''}>カード再抽選</button>
+        <div class="hint">※再抽選時は少しだけ上位レアが出やすくなります</div>
+      </div>
+      <hr style="border:0;border-top:1px solid #2b3b53;margin:14px 0">
+      <div class="title" style="font-size:16px;margin-bottom:8px">デッキ</div>
+      <div class="deck" id="deckView"></div>
+    </div>
+
+    <div class="panel">
+      <div class="title">選択肢 B</div>
+      ${pairHTML(R[0],R[1])}
+      <div class="footerbar">
+        <div class="hint">${rLabel}</div>
+        <button class="btn" onclick="choosePair(1)">B を選ぶ</button>
+      </div>
+    </div>
+  </div>
+  `;
+
+  renderDeckMini();
+}
+
+function renderDeckMini(){
+  const wrap = $('#deckView');
+  wrap.innerHTML = state.deck.map(c=>`
+    <div class="mini">
+      <img src="${c.img}" alt="${c.name}">
+      <div class="t ${c.rarity==='レジェンド'?'legendary':c.rarity==='ゴールド'?'goldy':c.rarity==='シルバー'?'silvery':'bronzy'}">${c.rarity}・${c.name}</div>
+    </div>
+  `).join('');
+}
+
+/* ====== イベント ====== */
+function startPick(cls){
+  state.selectedClass = cls;
+  state.deck = [];
+  state.pickIndex = 1;
+  state.rerollsLeft = 2;
+  currentOptions = null;
+  renderPick();
+}
+
+function choosePair(which){
+  const [L,R] = currentOptions;
+  const chosen = (which===0)? L : R;
+  state.deck.push(...chosen);
+  state.pickIndex++;
+  currentOptions = null;
+
+  if (state.pickIndex>14){
+    renderResult();
+  }else{
+    renderPick();
+  }
+}
+
+function doReroll(){
+  if (state.rerollsLeft<=0) return;
+  state.rerollsLeft--;
+  currentOptions = makeTwoOptions(state.selectedClass, state.pickIndex, true);
+  renderPick();
+}
+
+function renderResult(){
+  phaseLabel.textContent = '— 完了';
+  app.innerHTML = `
+    <div class="panel">
+      <div class="title">ドラフト完了！</div>
+      <div class="sub">クラス：<b>${state.selectedClass}</b>　/　総枚数：<b>${state.deck.length}</b></div>
+      <div class="deck" style="grid-template-columns:repeat(8,1fr)">${state.deck.map(c=>`
+        <div class="mini"><img src="${c.img}" alt="${c.name}"><div class="t">${c.rarity}・${c.name}</div></div>
+      `).join('')}</div>
+      <div class="footerbar" style="margin-top:16px">
+        <button class="btn" onclick="renderClassSelect()">最初に戻る</button>
+        <div class="hint">もう一度ピックしたい場合は「最初に戻る」を押してください</div>
+      </div>
+    </div>
+  `;
+}
+
+/* ====== 起動 ====== */
+(async ()=>{
+  await load();
+  renderClassSelect();
+})();
+</script>
+</body>
+</html>
