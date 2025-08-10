@@ -105,11 +105,11 @@ let state = {
 
 /* ====== ピック設定 ====== */
 const PICK_SCHEDULE = {
-  // 1〜19回の提示レア（基本はB/S交互、6,12,18はG、19は必ずレジェンド）
+  // 1〜19回の提示レア（B/S交互、6/12/18はG、19は以前の仕様に戻します）
   1:'ブロンズ',2:'シルバー',3:'ブロンズ',4:'シルバー',5:'ブロンズ',6:'ゴールド',
   7:'ブロンズ',8:'シルバー',9:'ブロンズ',10:'シルバー',11:'ブロンズ',12:'ゴールド',
   13:'ブロンズ',14:'シルバー',15:'ブロンズ',16:'シルバー',17:'ブロンズ',18:'ゴールド',
-  19:'レジェンド'
+  19:'シルバー'
 };
 const NEUTRAL_RATE = 0.15;      // ニュートラル混入率（低め）
 const getRand = n => Math.floor(Math.random()*n);
@@ -146,19 +146,17 @@ function makeInitialPair(cls){
 }
 
 /* ====== ピック用：指定レアの2枚組 ====== */
-function countInDeck(card){
-  return state.deck.filter(c=>c.name===card.name && c.rarity===card.rarity).length;
-}
-function canAdd(card, add=1){
-  return countInDeck(card) + add <= 3;
-}
 function pickTwoOfRarity(cls, rarity){
-  let pool = POOLS[cls].filter(c=>c.rarity===rarity && canAdd(c,1));
-  // ニュートラル混入（低確率）
+  let pool = POOLS[cls].filter(c=>c.rarity===rarity);
   if (Math.random() < NEUTRAL_RATE) {
-    const add = POOLS['ニュートラル'].filter(c=>c.rarity===rarity && canAdd(c,1));
+    const add = POOLS['ニュートラル'].filter(c=>c.rarity===rarity);
     pool = pool.concat(add);
   }
+  pool = shuffle([...new Set(pool)]);
+  const a = pool[0];
+  const b = pool.find(x=>x!==a) || pool[1] || a;
+  return [a,b].filter(Boolean);
+}
   pool = shuffle([...new Set(pool)]);
   if (pool.length===0){
     // どうしても枯渇した場合は、上位/下位レアから救済（同じく3枚制限を守る）
@@ -217,7 +215,6 @@ function renderClassSelect(){
 
 const PICK_SCHEDULE_MAP = PICK_SCHEDULE; // 1..19
 function rarityForPick(i, forReroll=false){
-  if (i===19) return 'レジェンド'; // 最終は固定でレジェンド
   const base = PICK_SCHEDULE_MAP[i];
   return forReroll ? maybeUpgrade(base) : base;
 }
@@ -279,9 +276,7 @@ function renderPick(){
       <div class="sub">再抽選 残り：<b>${state.rerollsLeft}</b> 回</div>
       <div class="footerbar">
         <button class="btn" onclick="doReroll()" ${state.rerollsLeft<=0 ? 'disabled':''}>カード再抽選</button>
-        <div class="flex">
-          <button class="btn" style="padding:8px 10px;font-size:12px" onclick="copyDeckList()">デッキをコピー</button>
-          <div class="hint">※再抽選時は少しだけ上位レアが出やすくなります</div>
+        <div class="hint">※再抽選時は少しだけ上位レアが出やすくなります</div>
         </div>
       </div>
       </div>
@@ -343,11 +338,16 @@ function startPick(cls){
 function choosePair(which){
   const [L,R] = currentOptions;
   const chosen = (which===0)? L : R;
-  // 上限3枚を厳守して追加
-  for (const card of chosen){
-    const add = (chosen[0]===chosen[1] && card===chosen[0]) ? 2 : 1; // 同一2枚提示のとき
-    if (add===2){
-      if (canAdd(card,2)) { state.deck.push(card, card); }
+  state.deck.push(...chosen);
+  state.pickIndex++;
+  currentOptions = null;
+
+  if (state.pickIndex>19){
+    renderResult();
+  }else{
+    renderPick();
+  }
+}
       else if (canAdd(card,1)) { state.deck.push(card); }
     } else {
       if (canAdd(card,1)) state.deck.push(card);
@@ -385,8 +385,7 @@ function renderResult(){
       `).join('')}</div>
       <div class="footerbar" style="margin-top:16px">
         <button class="btn" onclick="renderClassSelect()">最初に戻る</button>
-        <button class="btn" onclick="copyDeckList()">デッキをコピー</button>
-        <div class="hint">Shadowverse Beyond公式サイトで手動で貼り付け→保存してください</div>
+        <div class="hint">もう一度ピックしたい場合は「最初に戻る」を押してください</div>
       </div>
     </div>
   `;
